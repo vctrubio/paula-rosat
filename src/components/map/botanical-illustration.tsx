@@ -7,7 +7,7 @@ export function BotanicalIllustration({ id, title, className = "", showTitle = t
   return (
     <svg viewBox={showTitle ? "0 0 320 282" : "0 0 320 240"} className={`botanical-illustration ${className}`} aria-hidden="true">
       {showTitle && <HighlightedTitle title={title} x={160} y={26} width={Math.max(150, title.length * 13)} />}
-      <image href={illustrationSource(id)} y={showTitle ? 42 : 0} width="320" height="240" />
+      <image href={illustrationSource(id)} data-art-src={illustrationSource(id)} className="art-image" y={showTitle ? 42 : 0} width="320" height="240" />
     </svg>
   );
 }

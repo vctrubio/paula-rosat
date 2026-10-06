@@ -54,6 +54,22 @@ html:has(.portfolio) {
   font-weight: 400;
 }
 
+.art-image {
+  opacity: 0;
+}
+
+.art-image[data-art-ready="true"] {
+  animation: art-fade-in 650ms ease-out both;
+}
+
+@keyframes art-fade-in {
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .art-image[data-art-ready="true"] { animation-duration: 1ms; }
+}
+
 /* A still botanical frontispiece; the following pages pass over it. */
 .portfolio {
   isolation: isolate;
@@ -96,8 +112,8 @@ html:has(.portfolio) {
   scroll-margin-top: calc(var(--journey-height) + 1rem);
 }
 
-.story-pages > #map { z-index: 1; background: var(--color-parchment); }
-.story-pages > #elaborate { z-index: 2; background: var(--color-paper); }
+.story-pages > #mapa { z-index: 1; background: var(--color-parchment); }
+.story-pages > #processo { z-index: 2; background: var(--color-paper); }
 .story-pages > #ecosystems { z-index: 3; background: var(--color-parchment); }
 
 .journey-nav {
@@ -133,12 +149,9 @@ html:has(.portfolio) {
 }
 
 .journey-nav li { display: flex; align-items: center; }
-.journey-nav li + li::before {
-  content: "⟶";
-  margin-inline: clamp(0.5rem, 2vw, 2rem);
-  color: var(--color-amber);
-}
+.journey-nav li + li { margin-left: clamp(1.5rem, 4vw, 3.5rem); }
 .journey-nav a {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -148,16 +161,10 @@ html:has(.portfolio) {
   color: var(--color-ink-muted);
   text-underline-offset: 0.5rem;
 }
-.journey-nav a[aria-current="location"] { color: var(--color-olive); text-decoration: underline; }
+.journey-nav a[aria-current="location"] { color: var(--color-olive); }
 .journey-nav a:hover { color: var(--color-rose); }
 .journey-brand { font-family: var(--font-cormorant), serif; font-size: 1.25rem; font-weight: 500; }
 .portfolio .elaboration-step { scroll-margin-top: 6rem; }
-
-.portfolio-footer {
-  position: relative;
-  z-index: 1;
-  background: var(--color-paper);
-}
 
 .ecosystem-stories {
   display: grid;
@@ -471,7 +478,7 @@ body {
   stroke-dasharray: 1;
   stroke-dashoffset: var(--portrait-erase, 0);
 }
-@media (max-height: 620px), (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   .portrait-sketch-scroll { stroke-dashoffset: 0; }
 }
 
@@ -493,4 +500,66 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .portrait-sketch-pass,
   .portrait-sketch-outline { animation: none; }
+}
+
+/* Start the name as the portrait finishes, then reveal the bio. */
+.about-portrait-column {
+  --name-reveal-start: 1.7s;
+  --name-reveal-duration: 1.25s;
+}
+.portrait-name-ink {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: portrait-pencil-in var(--name-reveal-duration) linear var(--name-reveal-start) both;
+}
+
+.portrait-name-scroll-ink {
+  stroke-dasharray: 1;
+  stroke-dashoffset: var(--portrait-name-erase, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portrait-name-ink { animation: none; }
+  .portrait-name-scroll-ink { stroke-dashoffset: 0; transition: none; }
+}
+
+/* Reserve the bio layout; typing starts after the name reveal ends. */
+.bio-letter {
+  animation: bio-letter-in 1ms step-end calc(var(--name-reveal-start) + var(--name-reveal-duration) + var(--letter-delay)) both;
+}
+
+@keyframes bio-letter-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bio-letter { animation: none; }
+}
+
+.journey-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-line);
+  overflow: hidden;
+}
+.journey-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--color-olive);
+  transform: scaleX(var(--section-progress));
+  transform-origin: left;
+}
+.journey-nav .journey-brand {
+  clip-path: inset(0 100% 0 0);
+}
+.journey-nav[data-visible="true"] .journey-brand {
+  clip-path: inset(0);
+  transition: clip-path 650ms ease-out 180ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  .journey-nav[data-visible="true"] .journey-brand { transition: none; }
 }

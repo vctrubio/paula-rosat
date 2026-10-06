@@ -1,8 +1,6 @@
-// Edit the footer name and contact details here.
+// Shared site name and contact details.
 export const siteConfig = {
   name: "Paula Rosat",
-  url: "https://paularosat.com",
-  description: "Destiladora de plantas medicinales",
   // Temporary contact email; replace here when confirmed.
   email: "paula.rosat.roig@gmail.com",
   phone: "+34 606 77 64 35",

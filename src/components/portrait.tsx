@@ -13,12 +13,18 @@ export function Portrait({ label }: { label: string }) {
     <figure className="portrait" aria-label={label} role="img">
       <svg viewBox="0 0 520 580" className="block h-auto w-full overflow-visible" aria-hidden="true">
         <defs>
-          <path id="portrait-name-arc" d="M 15 350 A 245 258 0 0 1 505 350" />
+          <path id="portrait-name-arc" pathLength="1" d="M 15 364 A 245 258 0 0 1 505 364" />
           <mask id="portrait-sketch-reveal" maskUnits="userSpaceOnUse" x="70" y="100" width="380" height="470">
             <path className="portrait-sketch-pass" d={`M 78 103 ${sketchPasses}`} pathLength="1" fill="none" stroke="white" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />
           </mask>
           <mask id="portrait-sketch-scroll" maskUnits="userSpaceOnUse" x="70" y="100" width="380" height="470">
             <path className="portrait-sketch-scroll" d={`M 78 103 ${sketchPasses}`} pathLength="1" fill="none" stroke="white" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />
+          </mask>
+          <mask id="portrait-name-reveal" maskUnits="userSpaceOnUse" x="-50" y="0" width="620" height="410">
+            <use href="#portrait-name-arc" className="portrait-name-ink" pathLength="1" fill="none" stroke="white" strokeWidth="120" />
+          </mask>
+          <mask id="portrait-name-return" maskUnits="userSpaceOnUse" x="-50" y="0" width="620" height="410">
+            <use href="#portrait-name-arc" className="portrait-name-scroll-ink" pathLength="1" fill="none" stroke="white" strokeWidth="120" />
           </mask>
           <clipPath id="portrait-oval">
             <ellipse cx="260" cy="335" rx="170" ry="220" />
@@ -27,7 +33,9 @@ export function Portrait({ label }: { label: string }) {
         <g mask="url(#portrait-sketch-scroll)">
         <g mask="url(#portrait-sketch-reveal)">
         <image
-          href="/portraits/paula-sketch-v2.svg"
+          href="/portraits/paula-sketch-v2.webp"
+          data-art-src="/portraits/paula-sketch-v2.webp"
+          className="art-image"
           x="90"
           y="115"
           width="340"
@@ -38,9 +46,13 @@ export function Portrait({ label }: { label: string }) {
         </g>
         <ellipse className="portrait-sketch-outline" pathLength="1" cx="260" cy="335" rx="170" ry="220" fill="none" stroke="var(--color-line)" />
         </g>
+        <g mask="url(#portrait-name-return)">
+        <g mask="url(#portrait-name-reveal)">
         <text className="portrait-name" fontSize="54" style={titleFont.style}>
           <textPath href="#portrait-name-arc" startOffset="50%" textAnchor="middle">Paula Rosat</textPath>
         </text>
+        </g>
+        </g>
       </svg>
     </figure>
   );

@@ -24,7 +24,7 @@ Compartir no es un añadido al final: da sentido al trabajo. Una elaboración se
 
 Se mantienen las tres secciones en este orden: Sobre mí, Mapa, Elaborar.
 
-- **Sobre mí:** retrato SVG dentro del óvalo, nombre curvado encima y selector de cuatro idiomas debajo. Sin barra de navegación. El pie de contacto aparece al final de la web, después de Elaborar.
+- **Sobre mí:** retrato SVG dentro del óvalo, nombre curvado encima y selector de cuatro idiomas debajo. Sin barra de navegación.
 - **Mapa:** red de seis ámbitos alrededor de Percibir relaciones. Cada ilustración muestra debajo su título en mayúsculas y su frase breve, sin trazo resaltador; dos recorridos orgánicos parten de Territorio y se unen en Compartir.
 - **Elaborar:** recorrido de arriba abajo. Cada paso reutiliza la misma ilustración del mapa. En pantallas amplias, dibujo y explicación comparten una fila; la secuencia de pasos siempre es vertical.
 
@@ -137,11 +137,11 @@ Ejemplo tomado del documento de referencia. Se utiliza como narración conceptua
 
 **Compartir — La elaboración encuentra su sentido en los demás.** Llevarlo a la mesa, escuchar a quien lo prueba y compartir lo aprendido. La experiencia de los demás devuelve preguntas al territorio: el recorrido vuelve a empezar.
 
-El paso Relaciones utiliza `public/illustrations/relaciones.png`: un símbolo de arcos y ramificaciones en terracota, con una hoja verde en el centro que vincula la planta con sus raíces. Tiene fondo transparente y conserva la paleta del mapa. La fuente editable está en `docs/artwork/relaciones-mark.svg`. No añade un séptimo ámbito exterior al mapa; desarrolla el concepto central dentro del ejemplo.
+El paso Relaciones utiliza `public/illustrations/relaciones.webp`, con versiones PNG y SVG: una estampa vertical ocre de dos rodajas de cítrico, una en positivo y otra en negativo, unidas por un tallo y una división ondulada. El marco y la textura ligera evocan la referencia aportada. La fuente editable está en `docs/artwork/relaciones-mark.svg`; los espacios sin tinta son transparentes. El nombre y la explicación siguen en la maquetación de Elaborar. No añade un séptimo ámbito exterior al mapa; desarrolla el concepto central dentro del ejemplo.
 
 ## Lenguaje visual
 
-- Dibujos originales y reutilizables. Los seis ámbitos del mapa y Relaciones utilizan PNG transparentes; el símbolo de Relaciones conserva además una fuente SVG editable.
+- Dibujos originales y reutilizables. Los seis ámbitos del mapa y Relaciones utilizan imágenes transparentes con textura pictórica.
 - Contornos irregulares y curvas suaves, con aspecto de estudio a mano.
 - Poca saturación: tinta verde oliva, papel cálido, lavados vegetales, cobre y rosa seco.
 - Profundidad mediante superposición, planos de paisaje, perspectiva, elipses, nervaduras y tramas finas.
@@ -199,11 +199,9 @@ La dirección es un retrato de lápiz y tinta suave, con proporciones fieles a l
 
 Las descripciones accesibles están en los cuatro diccionarios. Se ha revisado la ilustración independiente; no se ha ejecutado la aplicación, build, lint ni pruebas del proyecto.
 
-## Pie de contacto
+## Cierre pendiente
 
-El cierre de Elaborar deja paso a un pie con la gota elegida, el nombre Paula Rosat y enlaces al teléfono y a Instagram. Se ha retirado la frase de cierre anterior.
-
-Editar `src/config/site.ts` para cambiar el nombre, el teléfono o el enlace de Instagram. El enlace de llamada se obtiene automáticamente del teléfono, eliminando los espacios. El componente está en `src/components/site-footer.tsx`; la gota reutilizable está en `src/components/brand-mark.tsx`.
+Se ha eliminado el pie anterior, su componente, estilos y traducciones. El nuevo cierre se diseñará a partir de las próximas indicaciones. Los datos de contacto permanecen en `src/config/site.ts`.
 
 ## Actualización del centro y los títulos del mapa
 

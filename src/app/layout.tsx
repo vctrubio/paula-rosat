@@ -1,4 +1,4 @@
-import { siteConfig } from "@/config/site";
+import { seoConfig } from "@/config/seo";
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -20,9 +20,10 @@ const sans = DM_Sans({
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    metadataBase: new URL(siteConfig.url),
-    title: siteConfig.name,
-    description: siteConfig.description,
+    metadataBase: new URL(seoConfig.url),
+    title: seoConfig.title,
+    icons: seoConfig.icons,
+    description: seoConfig.description,
   };
 }
 

@@ -4,7 +4,7 @@ import { IllustratedHeading } from "@/components/map/illustrated-heading";
 
 export function ElaborateSection() {
   return (
-    <section id="elaborate" lang="es" aria-labelledby="elaborate-title" className="scroll-slide flex-col px-4 py-16 sm:px-10 sm:py-24">
+    <section id="processo" lang="es" aria-labelledby="elaborate-title" className="scroll-slide flex-col px-4 py-16 sm:px-10 sm:py-24">
       <header className="mx-auto max-w-2xl text-center">
         <IllustratedHeading id="elaborate-title">{elaborationContent.title}</IllustratedHeading>
         <p className="mx-auto mt-5 max-w-xl font-display text-xl leading-relaxed sm:text-2xl">{elaborationContent.introduction}</p>

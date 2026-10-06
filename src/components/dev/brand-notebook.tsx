@@ -1,5 +1,4 @@
 import { SeoPreview } from "./seo-preview";
-import Link from "next/link";
 import { FontSpecimens } from "./font-specimens";
 
 const palette = [
@@ -70,7 +69,6 @@ export function BrandNotebook() {
         <SeoPreview />
         <WorkingNotes />
       </main>
-      <footer className="border-t border-line py-7 text-xs text-ink-muted"><Link href="/" className="hover:text-rose">← Back to Paula’s world</Link></footer>
     </div>
   );
 }

@@ -5,7 +5,7 @@
     "language": "Idioma",
     "about": "Sobre mí",
     "map": "Mapa",
-    "elaborate": "Elaborar",
+    "elaborate": "Processo",
     "backToAbout": "Volver a Sobre mí",
     "takingShape": "Un mundo que toma forma",
     "notebook": "Cuaderno de marca",
@@ -35,16 +35,8 @@
     "placeholder": "Ideas que echan raíces."
   },
   "NotFound": {
-    "label": "404 / Un pequeño desvío",
-    "title": "Aquí aún no crece nada.",
-    "return": "Volver al mundo de Paula"
-  },
-  "Footer": {
-    "call": "Llamar al {phone}",
-    "email": "Escribir a {email}",
-    "work": "Trabajo",
-    "education": "Formación",
-    "workPlaceholder": "Próximamente: proyectos y colaboraciones.",
-    "educationPlaceholder": "Próximamente: formación y aprendizajes."
+    "intro": "Creativa heladera y destiladora de plantas.",
+    "description": "Soy Paula. Exploro sabores, aromas y las posibilidades sutiles de las plantas. Extraer esencias, crear helados y compartir lo que descubro.",
+    "return": "Volver al inicio"
   }
 }

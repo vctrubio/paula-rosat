@@ -1,6 +1,6 @@
 export const locales = ["es", "en", "fr", "ca"] as const;
 export type Locale = (typeof locales)[number];
-export const defaultLocale: Locale = "en";
+export const defaultLocale: Locale = "es";
 export const localeCookie = "paula-locale";
 
 export const languageNames: Record<Locale, string> = {

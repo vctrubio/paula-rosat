@@ -35,16 +35,9 @@
     "placeholder": "Idees que arrelen."
   },
   "NotFound": {
-    "label": "404 / Un petit desviament",
-    "title": "Aquí encara no hi creix res.",
-    "return": "Tornar al món de la Paula"
-  },
-  "Footer": {
-    "call": "Trucar al {phone}",
-    "email": "Escriure a {email}",
-    "work": "Treball",
-    "education": "Formació",
-    "workPlaceholder": "Pròximament: projectes i col·laboracions.",
-    "educationPlaceholder": "Pròximament: formació i aprenentatges."
+    "label": "Pàgina no trobada",
+    "title": "Aquesta pàgina no existeix.",
+    "description": "Pot ser que l’enllaç hagi canviat o que l’adreça no sigui correcta.",
+    "return": "Tornar a l’inici"
   }
 }

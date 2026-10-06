@@ -20,7 +20,7 @@ Personal portfolio for Paula Rosat, alchemist and cook. A botanical field journa
 3. **ElaborateSection** (`#elaborate`): vertical blackberry and juniper example. Warm paper `#F7F4EB`.
 4. **EcosystemSection** (`#ecosystems`): “Lo visible” and “Lo invisible”, two columns on wider screens and stacked on mobile. Parchment `#EAE4D4`.
 
-The footer follows the chapters with icon-only contacts in this order: Instagram, phone, email. Custom inline SVGs use Botanical ink (`#293327`) on hover and keyboard focus, with accessible labels and no outgoing arrows. Branding stays in the journey navbar. Work and Education placeholders sit below the contacts; their copy is translated in all four locale files.
+The previous footer has been removed. The closing section will be designed separately.
 
 ### Layered scrolling and navigation
 
@@ -92,4 +92,4 @@ The landing portrait reveals on page load through an animated SVG mask of overla
 
 The sharing card places the droplet on the left and the name on the right, with a cursive Spanish subtitle underneath. Subtitle lettering is outlined Cormorant Garamond Italic in `src/assets/fonts/og-tagline.json` (generated from the already downloaded font); regenerate those outlines if the tagline changes. This keeps OG rendering independent of external font requests.
 
-Sharing verification: checked the existing local server response for title, description, canonical, Open Graph and Twitter metadata; the OG endpoint returned a valid 1200 × 630 PNG. No production build or lint was run. External sharing requires deployment at the configured public domain. The footer component is currently commented out in the homepage composition.
+Sharing verification: checked the existing local server response for title, description, canonical, Open Graph and Twitter metadata; the OG endpoint returned a valid 1200 × 630 PNG. No production build or lint was run. External sharing requires deployment at the configured public domain.

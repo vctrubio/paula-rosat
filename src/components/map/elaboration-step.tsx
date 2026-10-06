@@ -16,7 +16,7 @@ export function ElaborationStep({ step, index }: { step: Step; index: number }) 
             <HighlightedTitle title={step.title} x={Math.max(150, step.title.length * 13) / 2 + 8} y={34} width={Math.max(150, step.title.length * 13)} />
           </svg>
         </h3>
-        <p className="mt-3 font-display text-3xl leading-tight sm:text-4xl">{step.subtitle}</p>
+        <p className="mt-3 font-display text-3xl leading-tight">{step.subtitle}</p>
         <p className="mt-4 max-w-md text-sm leading-7 text-ink-muted sm:text-base sm:leading-8">{step.body}</p>
       </div>
     </li>

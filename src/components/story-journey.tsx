@@ -1,14 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode, type MouseEvent } from "react";
-import { BrandMark } from "@/components/brand-mark";
-import { siteConfig } from "@/config/site";
-
-const stops = [
-  { id: "about", label: siteConfig.name },
-  { id: "map", label: "Mapa" },
-  { id: "elaborate", label: "Elaborar" },
-];
+import { JourneyNavigation } from "@/components/journey-navigation";
 
 export function StoryJourney({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
@@ -22,16 +15,45 @@ export function StoryJourney({ children }: { children: ReactNode }) {
     if (!container || !navigation) return;
     const sections = Array.from(container.querySelectorAll<HTMLElement>(":scope > section"));
     const about = document.getElementById("about");
+    const portrait = about?.querySelector<HTMLElement>(".portrait");
     let frame = 0;
     function updateActive() {
       frame = 0;
       const threshold = navigation!.offsetHeight + 100;
       const distance = window.innerHeight - container!.getBoundingClientRect().top;
-      const progress = Math.max(0, Math.min(1, distance / (window.innerHeight * 0.3)));
-      about?.style.setProperty("--portrait-erase", String(progress));
+      // Keep the reversible sketch animation in view as the map covers the portrait.
+      // Screen-percentage delays can make it redraw entirely behind the map.
+      let nameGone = false;
+      if (portrait && sections[0]) {
+        const bounds = portrait.getBoundingClientRect();
+        const mapTop = sections[0].getBoundingClientRect().top;
+        const start = bounds.bottom + bounds.height * 0.2;
+        const end = bounds.top + bounds.height * 0.25;
+        const progress = Math.max(0, Math.min(1, (start - mapTop) / Math.max(1, start - end)));
+        about?.style.setProperty("--portrait-erase", String(progress));
+        // Start erasing the name as the portrait reaches the end of its erasure.
+        const nameStart = end + bounds.height * 0.18;
+        const nameProgress = Math.max(0, Math.min(1, (nameStart - mapTop) / Math.max(1, bounds.height * 0.25)));
+        about?.style.setProperty("--portrait-name-erase", String(nameProgress));
+        nameGone = nameProgress >= 1;
+      }
       const entered = distance > 1;
-      setVisible(entered);
-      let current = entered ? "map" : "about";
+      setVisible(nameGone);
+      // Use document flow distances, not the moving positions of sticky sheets.
+      const scroll = window.scrollY;
+      const containerTop = container!.getBoundingClientRect().top + scroll;
+      const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+      let sectionStart = containerTop - navigation!.offsetHeight;
+      const clamp = (value: number) => Math.max(0, Math.min(1, value));
+      navigation!.style.setProperty("--progress-about", String(clamp(scroll / Math.max(1, sectionStart))));
+      sections.forEach((section, index) => {
+        const nextStart = sectionStart + section.offsetHeight;
+        const sectionEnd = index === sections.length - 1 ? maxScroll : Math.min(nextStart, maxScroll);
+        const progress = clamp((scroll - sectionStart) / Math.max(1, sectionEnd - sectionStart));
+        navigation!.style.setProperty(`--progress-${section.id}`, String(progress));
+        sectionStart = nextStart;
+      });
+      let current = entered ? "mapa" : "about";
       for (const section of sections) {
         if (section.getBoundingClientRect().top <= threshold) current = section.id;
       }
@@ -51,12 +73,14 @@ export function StoryJourney({ children }: { children: ReactNode }) {
     }
     const observer = new ResizeObserver(measure);
     observer.observe(navigation);
+    if (portrait) observer.observe(portrait);
     sections.forEach((section) => observer.observe(section));
     measure();
     window.addEventListener("resize", measure);
     window.addEventListener("scroll", scheduleActive, { passive: true });
     return () => {
       about?.style.removeProperty("--portrait-erase");
+      about?.style.removeProperty("--portrait-name-erase");
       observer.disconnect();
       cancelAnimationFrame(frame);
       window.removeEventListener("resize", measure);
@@ -80,18 +104,7 @@ export function StoryJourney({ children }: { children: ReactNode }) {
 
   return (
     <div ref={root} className="story-pages">
-      <nav ref={nav} className="journey-nav" data-visible={visible} inert={!visible} aria-hidden={!visible} aria-label="Recorrido" lang="es">
-        <ol>
-          {stops.map((stop, index) => (
-            <li key={stop.id}>
-              <a href={`#${stop.id}`} aria-current={active === stop.id ? "location" : undefined} onClick={(event) => navigate(event, stop.id)}>
-                {index === 0 && <BrandMark className="h-6 w-6 shrink-0 text-olive" />}
-                <span className={index === 0 ? "journey-brand" : undefined}>{stop.label}</span>
-              </a>
-            </li>
-          ))}
-        </ol>
-      </nav>
+      <JourneyNavigation navRef={nav} active={active} visible={visible} onNavigate={navigate} />
       {children}
     </div>
   );

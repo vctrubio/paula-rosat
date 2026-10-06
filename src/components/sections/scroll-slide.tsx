@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 type ScrollSlideProps = {
-  id: "about" | "map" | "elaborate";
+  id: "about" | "mapa" | "processo";
   number: string;
   label: string;
   children: ReactNode;

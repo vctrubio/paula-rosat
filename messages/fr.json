@@ -35,16 +35,9 @@
     "placeholder": "Des idées prennent racine."
   },
   "NotFound": {
-    "label": "404 / Un petit détour",
-    "title": "Rien ne pousse ici. Pour l’instant.",
-    "return": "Retrouver l’univers de Paula"
-  },
-  "Footer": {
-    "call": "Appeler le {phone}",
-    "email": "Écrire à {email}",
-    "work": "Travail",
-    "education": "Formation",
-    "workPlaceholder": "Prochainement : projets et collaborations.",
-    "educationPlaceholder": "Prochainement : formation et apprentissages."
+    "label": "Page introuvable",
+    "title": "Cette page n’existe pas.",
+    "description": "Le lien a peut-être changé ou l’adresse est incorrecte.",
+    "return": "Retour à l’accueil"
   }
 }

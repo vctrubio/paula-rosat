@@ -35,16 +35,9 @@
     "placeholder": "Ideas taking root."
   },
   "NotFound": {
-    "label": "404 / A little off the path",
-    "title": "Nothing growing here. Yet.",
-    "return": "Return to Paula’s world"
-  },
-  "Footer": {
-    "call": "Call {phone}",
-    "email": "Email {email}",
-    "work": "Work",
-    "education": "Education",
-    "workPlaceholder": "Projects and collaborations coming soon.",
-    "educationPlaceholder": "Education and learning journey coming soon."
+    "label": "Page not found",
+    "title": "This page doesn’t exist.",
+    "description": "The link may have changed, or the address may be incorrect.",
+    "return": "Back to home"
   }
 }
