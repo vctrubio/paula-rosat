@@ -38,5 +38,13 @@
     "label": "404 / A little off the path",
     "title": "Nothing growing here. Yet.",
     "return": "Return to Paula’s world"
+  },
+  "Footer": {
+    "call": "Call {phone}",
+    "email": "Email {email}",
+    "work": "Work",
+    "education": "Education",
+    "workPlaceholder": "Projects and collaborations coming soon.",
+    "educationPlaceholder": "Education and learning journey coming soon."
   }
 }

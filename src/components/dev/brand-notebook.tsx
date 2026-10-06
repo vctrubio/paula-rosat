@@ -1,5 +1,6 @@
+import { SeoPreview } from "./seo-preview";
 import Link from "next/link";
-import { SiteHeader } from "@/components/site-header";
+import { FontSpecimens } from "./font-specimens";
 
 const palette = [
   { name: "Warm paper", token: "paper", hex: "#F7F4EB", use: "The canvas. Quiet, warm, tactile." },
@@ -11,7 +12,7 @@ const palette = [
 ];
 
 const notes = [
-  { title: "What we know", items: ["Paula Rosat is an alchemist and a cook.", "She works with plant essences to flavour her world.", "She speaks Spanish, English, French, and Catalan; all four are supported on the site.", "Three scroll slides, in order: About, Map, Elaborate. Each section is its own component.", "The portfolio will live at paularosat.com.", "GoDaddy manages the domain; Vercel will host the site."] },
+  { title: "What we know", items: ["Paula Rosat is an alchemist and a cook.", "She works with plant essences to flavour her world.", "She speaks Spanish, English, French, and Catalan; all four are supported on the site.", "Four chapters, in order: About, Map, Elaborate, Ecosystem. Each section is its own component.", "The portfolio will live at paularosat.com.", "GoDaddy manages the domain; Vercel will host the site."] },
   { title: "First creative direction", items: ["A botanical field journal: personal, sensory, quietly curious.", "Plant studies, delicate lines, generous space, and paper tones.", "Let alchemy feel tangible through ingredients, process, and flavour.", "All homepage wording is a first draft, ready for Paula’s own voice."] },
   { title: "Still to discover", items: ["Her story, location, and the default language she prefers (currently English).", "Notes and references for planning the Map and Elaborate sections.", "The work she wants to share: cooking, essences, experiments, collaborations.", "Photography, botanical material, and existing visual references.", "Contact details, social links, and what visitors should do next.", "Build and lint are paused until explicitly requested."] },
 ];
@@ -30,28 +31,6 @@ function Palette() {
             <p className="mt-3 text-xs leading-5 text-ink-muted">{color.use}</p>
           </div>
         ))}
-      </div>
-    </section>
-  );
-}
-
-function Typography() {
-  return (
-    <section aria-labelledby="type-title" className="border-t border-line py-10">
-      <p className="eyebrow text-rose">02 / Typography</p>
-      <h2 id="type-title" className="sr-only">Type specimens</h2>
-      <div className="mt-7 grid gap-10 md:grid-cols-2">
-        <div>
-          <p className="text-xs text-ink-muted">Cormorant Garamond · Regular & italic · Headlines</p>
-          <p className="mt-5 font-display text-6xl leading-none sm:text-7xl">Rooted in nature.<br /><em className="text-rose">Moved by curiosity.</em></p>
-          <p className="mt-6 font-display text-2xl">Aa Bb Cc · 0123456789 · à é í ó ü ñ</p>
-        </div>
-        <div className="md:border-l md:border-line md:pl-10">
-          <p className="text-xs text-ink-muted">DM Sans · Regular & medium · Body & labels</p>
-          <p className="mt-6 max-w-sm text-lg leading-relaxed">A leaf, a scent, a flavour. Small discoveries become the ingredients of a world that is entirely her own.</p>
-          <p className="eyebrow mt-7">Botanical alchemy · Notes from the kitchen</p>
-          <p className="mt-6 text-sm text-ink-muted">The serif brings softness and character; the sans keeps the reading clear.</p>
-        </div>
       </div>
     </section>
   );
@@ -80,15 +59,15 @@ function WorkingNotes() {
 export function BrandNotebook() {
   return (
     <div className="mx-auto max-w-7xl px-6 sm:px-12">
-      <SiteHeader />
       <main id="main">
         <div className="py-12 sm:py-16">
           <p className="eyebrow text-rose">Development only · Direction 01 · Work in progress</p>
           <h1 className="mt-5 font-display text-6xl tracking-tight sm:text-8xl">The brand notebook.</h1>
           <p className="mt-5 max-w-xl text-sm leading-7 text-ink-muted">A living reference for Paula’s world: the colours, the letters, and the ideas we’re gathering. This page is only available while running the local development server.</p>
         </div>
+        <FontSpecimens />
         <Palette />
-        <Typography />
+        <SeoPreview />
         <WorkingNotes />
       </main>
       <footer className="border-t border-line py-7 text-xs text-ink-muted"><Link href="/" className="hover:text-rose">← Back to Paula’s world</Link></footer>

@@ -3,7 +3,6 @@ export const mapContent = {
   title: "Mi mapa",
   introduction: "Leer el territorio para percibir las relaciones que lo conforman y encontrar formas de traducirlo para poder compartirlo.",
   center: ["Percibir", "relaciones"],
-  centerDescription: ["entre territorio, materia,", "personas, técnica y cultura."],
   mobileHint: "Desliza el mapa para explorar sus relaciones.",
   diagramDescription: "Una red de seis ámbitos alrededor de Percibir relaciones: territorio, materia y planta, conocimiento, transformación, compartir y experiencia. Todos dialogan con el centro y entre sí. Cada dibujo enlaza con su paso en la elaboración.",
   nodes: [
@@ -23,7 +22,6 @@ export const elaborationContent = {
   title: "Elaborar",
   subtitle: "Helado de mora y enebro",
   introduction: "Un sabor que nace de un territorio y sus relaciones.",
-  principle: "La materia prima manda sobre la receta. La técnica, al servicio de su expresión.",
   steps: [
     { id: "territorio", title: "Territorio", subtitle: "Todo empieza por escuchar un lugar.", body: "Observar el paisaje, el suelo, el agua, la luz y la estación. En el ejemplo, la mora y el enebro se encuentran en un mismo entorno: ese vínculo es el punto de partida." },
     { id: "materia", title: "Materia / planta", subtitle: "Conocer antes de intervenir.", body: "La mora aporta dulzor, jugosidad y fruta de temporada. El enebro sugiere notas aromáticas, resinosas y de bosque. Mirar la planta entera, de las raíces a las hojas, y reconocer sus ciclos." },

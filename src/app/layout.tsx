@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -6,7 +7,7 @@ import "./globals.css";
 const display = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "700"],
   style: ["normal", "italic"],
   display: "swap",
 });
@@ -18,11 +19,10 @@ const sans = DM_Sans({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("Metadata");
   return {
-    metadataBase: new URL("https://paularosat.com"),
-    title: t("title"),
-    description: t("description"),
+    metadataBase: new URL(siteConfig.url),
+    title: siteConfig.name,
+    description: siteConfig.description,
   };
 }
 

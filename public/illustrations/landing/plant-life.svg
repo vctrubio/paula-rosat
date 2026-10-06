@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 650" fill="none">
+<defs>
+  <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d5ddc7" stop-opacity=".3"/><stop offset="1" stop-color="#eae4d4" stop-opacity="0"/></linearGradient>
+</defs>
+<title>De la luz al aroma</title><desc>Un estudio botánico: el sol, una rama de hojas y flores, una abeja, frutos y una gota de esencia. Una invitación a observar y conocer las plantas.</desc>
+<path d="M48 322C19 199 99 115 227 102C342 79 406 216 379 329C355 452 313 573 172 570C77 577 47 436 48 322Z" fill="url(#wash)"/>
+<g stroke="#b8873f" stroke-linecap="round">
+<circle cx="90" cy="84" r="28" fill="#b8873f" fill-opacity=".05" stroke-width="1.1"/>
+<circle cx="90" cy="84" r="21" stroke-width=".6" stroke-opacity=".5"/>
+<path d="M90 42V32M90 127V136M48 84H39M133 84H143M60 54L53 47M119 55L127 47M60 113L53 121M120 114L127 121" stroke-width="1.2"/>
+<path d="M117 116C139 138 142 159 153 176M139 132C152 148 157 158 161 168" stroke-width=".8" stroke-opacity=".5"/>
+</g>
+<g stroke="#52604a" stroke-linecap="round" stroke-linejoin="round">
+<!-- A single stem winds through the page: the eye can follow its life. -->
+<path d="M176 590C203 519 236 445 221 366C211 298 220 222 272 153" stroke-width="2.2"/>
+<path d="M181 593C215 514 243 441 226 363C216 304 224 220 276 156" stroke-width=".7" opacity=".35"/>
+<path d="M224 415C180 393 148 354 127 312M220 351C265 330 295 300 313 262M226 473C264 454 291 422 308 388M218 276C189 254 169 227 156 195" stroke-width="1.4"/>
+<!-- Leaves remain asymmetric, with individual veins and translucent washes. -->
+<path d="M218 398C171 392 117 371 96 320C142 318 196 342 218 398Z" fill="#82916f" fill-opacity=".16" stroke-width="1.3"/>
+<path d="M220 349C228 295 273 267 321 252C319 299 283 343 220 349Z" fill="#82916f" fill-opacity=".19" stroke-width="1.3"/>
+<path d="M227 474C236 429 274 403 318 389C316 431 283 470 227 474Z" fill="#82916f" fill-opacity=".14" stroke-width="1.3"/>
+<path d="M216 279C176 271 143 237 136 192C178 201 209 233 216 279Z" fill="#82916f" fill-opacity=".11" stroke-width="1.3"/>
+<path d="M251 190C242 157 257 124 290 104C304 142 283 174 251 190Z" fill="#82916f" fill-opacity=".13" stroke-width="1.3"/>
+<g stroke-width=".8" opacity=".7">
+<path d="M104 327L218 398M120 337L123 355M139 348L160 344M157 360L158 378M177 374L198 373M233 341L313 260M247 327L248 306M264 310L287 306M280 292L282 275M238 465L308 399M252 451L254 429M270 433L292 429M143 202L216 279M160 222L162 243M175 239L195 244M254 183L285 115M263 163L277 156M271 145L265 133"/>
+</g>
+<!-- Small aromatic sprig tucked behind the main specimen. -->
+<path d="M134 546C127 472 99 426 64 396M110 475L145 436M88 435L52 424M100 453L65 445M119 496L154 464M127 525L156 501" stroke-width="1.2"/>
+<path d="M88 435C77 415 74 400 76 390M98 451C92 429 92 416 96 407M108 474C109 454 115 440 126 429M117 496C118 476 123 462 137 450M126 522C130 504 137 493 149 487" stroke-width="1"/>
+<path d="M79 422L58 412M98 453L78 438M119 499L139 479M127 522L146 510" stroke-width=".65" opacity=".5"/>
+<!-- Blossoms: gathering, opening, becoming fruit. -->
+<path d="M271 155C290 165 320 182 333 204M278 164C302 150 326 139 348 139" stroke-width="1.2"/>
+<path d="M332 194C313 175 310 193 323 207C302 207 310 228 329 216C321 239 343 242 341 218C359 235 375 217 350 209C374 197 359 180 342 199C348 174 326 174 332 194Z" fill="#f7f4eb" stroke-width="1.1"/>
+<circle cx="337" cy="209" r="6" fill="#b8873f" fill-opacity=".45" stroke="#b8873f"/>
+<path d="M327 199L333 205M346 197L341 204M347 216L342 212M329 221L333 214" stroke-width=".7"/>
+<path d="M348 133C337 122 339 114 347 119C348 107 360 113 356 122C369 120 369 132 357 133Z" fill="#b8873f" fill-opacity=".12" stroke-width="1"/>
+<path d="M206 486C178 476 164 466 161 449" stroke-width="1"/>
+</g>
+<!-- A pollinator makes the plant a relationship rather than an isolated object. -->
+<g transform="translate(344 79) rotate(-24)" stroke="#52604a" stroke-linecap="round" stroke-width="1">
+<path d="M-4 1C-25-24-9-30 0-6C10-30 27-17 6 3" fill="#f7f4eb"/>
+<ellipse cy="8" rx="8" ry="14" fill="#b8873f" fill-opacity=".18"/>
+<path d="M-7 4H7M-7 11H7M-5 17H5M-4-4L-8-11M4-4L9-10M-8 7L-13 12M8 7L14 11"/>
+</g>
+<path d="M364 108C401 155 374 170 365 160C346 138 396 134 404 181" stroke="#52604a" stroke-width=".8" stroke-dasharray="1 6" stroke-linecap="round" opacity=".42"/>
+<g stroke="#65585b" stroke-width=".9" fill="#8b4e50" fill-opacity=".34"><circle cx="153" cy="434" r="5"/><circle cx="162" cy="433" r="5"/><circle cx="149" cy="443" r="5"/><circle cx="159" cy="442" r="6"/><circle cx="168" cy="442" r="5"/><circle cx="151" cy="452" r="5"/><circle cx="161" cy="453" r="5"/><circle cx="157" cy="461" r="4"/></g>
+<!-- The drop connects observation to Paula’s extraction work. -->
+<g stroke="#b8873f" stroke-linecap="round">
+<path d="M316 504C308 522 292 535 292 550C292 565 302 576 316 576C331 576 341 565 341 550C341 535 326 520 316 504Z" fill="#b8873f" fill-opacity=".07" stroke-width="1.2"/>
+<path d="M301 547C298 560 305 567 311 568" stroke-width=".8"/>
+<path d="M257 490C279 484 296 490 304 500M297 493L304 500L295 503" fill="none" stroke-width=".8" opacity=".7"/>
+</g>
+<!-- Quiet lines for the editorial annotations beside the drawing. -->
+<g stroke="#52604a" stroke-width=".65" opacity=".35" fill="none">
+<path d="M34 218H84L135 241M324 338L357 325H416M38 565H86L123 535"/>
+<circle cx="135" cy="241" r="2"/><circle cx="324" cy="338" r="2"/><circle cx="123" cy="535" r="2"/>
+</g>
+</svg>

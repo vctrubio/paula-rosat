@@ -38,5 +38,13 @@
     "label": "404 / Un pequeño desvío",
     "title": "Aquí aún no crece nada.",
     "return": "Volver al mundo de Paula"
+  },
+  "Footer": {
+    "call": "Llamar al {phone}",
+    "email": "Escribir a {email}",
+    "work": "Trabajo",
+    "education": "Formación",
+    "workPlaceholder": "Próximamente: proyectos y colaboraciones.",
+    "educationPlaceholder": "Próximamente: formación y aprendizajes."
   }
 }

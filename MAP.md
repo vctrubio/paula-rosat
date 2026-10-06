@@ -16,19 +16,13 @@ Las imágenes de referencia se conservan en el repositorio como documentación. 
 
 El centro es **Percibir relaciones**: entre territorio, materia, personas, técnica y cultura. La práctica de Paula conecta esas dimensiones. El mapa es una red viva; la experiencia vuelve a transformar la manera de observar y conocer.
 
-Dos principios de las referencias orientan todo el recorrido:
-
-> La materia prima manda sobre la receta.
->
-> La técnica, al servicio de la expresión de la materia.
-
 Compartir no es un añadido al final: da sentido al trabajo. Una elaboración se completa en el encuentro, en lo que alguien siente al probarla y en lo que devuelve a los demás.
 
 ## Estructura de la web
 
 Se mantienen las tres secciones en este orden: Sobre mí, Mapa, Elaborar.
 
-- **Sobre mí:** retrato SVG dentro del óvalo, nombre curvado encima y selector de cuatro idiomas debajo. Sin barra de navegación ni pie de página.
+- **Sobre mí:** retrato SVG dentro del óvalo, nombre curvado encima y selector de cuatro idiomas debajo. Sin barra de navegación. El pie de contacto aparece al final de la web, después de Elaborar.
 - **Mapa:** red de seis ámbitos alrededor de Percibir relaciones. Dibujos y títulos en SVG; trazos curvos conectan el centro con los ámbitos y los ámbitos entre sí.
 - **Elaborar:** recorrido de arriba abajo. Cada paso reutiliza la misma ilustración del mapa. En pantallas amplias, dibujo y explicación comparten una fila; la secuencia de pasos siempre es vertical.
 
@@ -201,3 +195,75 @@ El óvalo de la portada utiliza `public/portraits/paula-sketch-v2.svg`, la segun
 La dirección es un retrato de lápiz y tinta suave, con proporciones fieles a la referencia, cabello recogido y ojos avellana con reflejos ámbar. La conversión vectorial simplifica la textura del original. El componente `src/components/portrait.tsx` conserva el recorte ovalado, el nombre curvado y las posiciones existentes.
 
 Las descripciones accesibles están en los cuatro diccionarios. Se ha revisado la ilustración independiente; no se ha ejecutado la aplicación, build, lint ni pruebas del proyecto.
+
+## Pie de contacto
+
+El cierre de Elaborar deja paso a un pie con la gota elegida, el nombre Paula Rosat y enlaces al teléfono y a Instagram. Se ha retirado la frase de cierre anterior.
+
+Editar `src/config/site.ts` para cambiar el nombre, el teléfono o el enlace de Instagram. El enlace de llamada se obtiene automáticamente del teléfono, eliminando los espacios. El componente está en `src/components/site-footer.tsx`; la gota reutilizable está en `src/components/brand-mark.tsx`.
+
+## Actualización del centro y los títulos del mapa
+
+El centro muestra únicamente «Percibir relaciones» sobre el retrato de Paula, con opacidad reducida y un desvanecido radial. Se elimina el contorno punteado y el subtítulo del centro.
+
+Los títulos de los ámbitos aparecen encima de cada ilustración, con un trazo ámbar ondulado e inclinado de izquierda a derecha. Las frases descriptivas permanecen debajo de los dibujos. `src/components/map/highlighted-title.tsx` comparte este tratamiento entre el mapa y las ilustraciones de Elaborar.
+
+## Último ajuste de la portada
+
+El selector de idiomas de Sobre mí queda comentado temporalmente, tanto en el import como en el JSX. `ShortBio`, en `src/components/short-bio.tsx`, muestra debajo del retrato el texto provisional exacto solicitado: «Hola! me gusta mucho mi nuevo novio, dijo paula a mama.» El componente declara español como idioma.
+
+El nombre curvado utiliza Cormorant Garamond en cursiva de peso 500, con mayor tamaño y espaciado más compacto, para una firma más expresiva. El estilo se encuentra en `.portrait-name`.
+
+## Imagen del centro: Paula junto al alambique
+
+«Percibir relaciones» utiliza ahora `public/portraits/paula-alambic.svg`, una nueva ilustración de Paula junto a su alambique de cobre. Se mantiene la estética de lápiz, tinta sepia y acentos ámbar del retrato de portada. La composición cuadrada permite ver ambos sujetos en el centro desvanecido, con el título por encima. La portada conserva su retrato anterior.
+
+El original generado y el prompt se conservan en `docs/artwork/paula-alambic.png` y `docs/artwork/paula-alambic.md`. La versión SVG contiene trazados vectoriales. No se ha ejecutado la aplicación, build ni lint.
+
+## Portada como umbral: lo visible y lo invisible
+
+En pantallas de al menos 1200 px, dos láminas botánicas flanquean el retrato. Por debajo de ese ancho se ocultan por completo mediante CSS. No se añaden elementos de navegación.
+
+### Izquierda — Aprender de lo vivo
+
+`public/illustrations/landing/plant-life.svg` es un dibujo vectorial original: sol, una rama continua con hojas nervadas, flor abierta, abeja, fruto, una ramita aromática y una gota. La lectura va de la luz y el crecimiento a la observación de la materia y su esencia. Las líneas de llamada acompañan tres gestos: **observar, reconocer, extraer**.
+
+Texto: «Mirar una hoja, reconocer un aroma, llevar un descubrimiento a la cocina.» Cierre: «La curiosidad empieza aquí.»
+
+La composición evoca la práctica de Paula con plantas, aromas y cocina; no presenta una especie identificada ni atribuye hechos biográficos nuevos.
+
+### Derecha — Conocer es conectar
+
+`public/illustrations/landing/roots-mycelium.svg` muestra un brote sobre el suelo, hongos, raíces de distintos grosores y una red fina de micelio. Una hoja caída sugiere el paso del tiempo. Las líneas de llamada acompañan **escuchar, vincular, compartir**.
+
+Texto: «Bajo lo que vemos hay tiempo y relaciones. Aprender también es escuchar y compartir.» Cierre: «Nada crece a solas.»
+
+La red sirve como metáfora visual de relaciones y conocimiento. Es una ilustración narrativa, no un diagrama científico de intercambios entre especies concretas.
+
+### Composición y tipografía
+
+- Componente compartido: `src/components/landing/botanical-story.tsx`.
+- Textos españoles editables: `src/content/landing.es.ts`.
+- Retrato en el centro, con las dos láminas a los lados; proporciones adaptables sin posiciones absolutas superpuestas a la cara.
+- Nombre sobre una curva más ancha: radio horizontal de 245 unidades SVG, letras de 70 unidades, Cormorant Garamond cursiva de peso 700 y espaciado de 0.055 em.
+- Se conserva el retrato elegido y el texto provisional de ShortBio. El selector de idiomas sigue comentado.
+
+### Paso a las otras secciones
+
+La portada usa `position: sticky` dentro de `main`. Mapa y Elaborar comparten `.story-pages`, una capa opaca con mayor orden de apilamiento, borde superior suavemente redondeado y sombra discreta. Al desplazar la página, esa capa pasa por encima de la portada; al volver hacia arriba, la descubre de nuevo. El pie tiene su propio fondo opaco.
+
+El desplazamiento es nativo, sin interceptar rueda, teclado o gestos y sin animaciones JavaScript. Se retira el ajuste magnético de scroll para mantener continuo el paso entre capas. En ventanas de hasta 620 px de alto o cuando se solicita movimiento reducido, la portada vuelve al flujo normal para conservar la lectura completa.
+
+No se ha ejecutado la aplicación, build, lint ni pruebas para este cambio.
+
+## Comparación tipográfica: estilo serigrafía
+
+La página `/dev` ya no incluye la barra superior con Paula Rosat ni el selector de idiomas. En `/dev#fonts` se comparan cuatro fuentes: **Fraunces 900**, **Caprasimo**, **Bevan** y **Archivo Black**. Cada muestra contiene el nombre curvado, «Percibir relaciones», una frase corta y caracteres acentuados.
+
+Las familias se cargan con `next/font` dentro del componente de desarrollo `src/components/dev/font-specimens.tsx`. No se aplican a la portada hasta que Paula confirme una dirección. Fraunces es la primera propuesta por su carácter orgánico; las demás exploran una presencia más redonda, de sello o de cartel. Esta comparación se centra en la forma de las letras; no añade textura artificial de impresión.
+
+No se ha ejecutado la app, build ni lint.
+
+## Ecosistemas: sección independiente
+
+«Lo visible» y «Lo invisible» salen de la portada. Ahora forman `EcosystemSection`, en `src/components/sections/ecosystem-section.tsx`, inmediatamente después de Elaborar y antes del pie. El archivo de página solo compone las secciones. Las dos historias se muestran lado a lado desde 768 px y una debajo de otra en móvil; ya no están limitadas a escritorio. La portada vuelve a contener únicamente el retrato, el nombre y ShortBio.

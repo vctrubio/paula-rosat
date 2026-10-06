@@ -13,9 +13,6 @@ export function ElaborateSection() {
       <ol className="elaboration-journey mx-auto mt-12 w-full max-w-4xl sm:mt-20">
         {elaborationContent.steps.map((step, index) => <ElaborationStep key={step.id} step={step} index={index} />)}
       </ol>
-      <div className="mx-auto mt-12 max-w-xl text-center">
-        <p className="font-display text-2xl italic leading-relaxed text-rose sm:text-3xl">{elaborationContent.principle}</p>
-      </div>
     </section>
   );
 }

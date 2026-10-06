@@ -1,12 +1,13 @@
 import { mapContent } from "@/content/map.es";
+import { HighlightedTitle } from "./highlighted-title";
 
 const spokes = [
-  "M 498 404 Q 492 332 500 287",
+  "M 498 378 Q 492 357 500 337",
   "M 369 454 Q 324 423 295 420",
   "M 631 454 Q 675 425 702 421",
   "M 635 576 Q 671 621 704 644",
   "M 365 576 Q 326 617 297 644",
-  "M 500 638 Q 507 737 500 811",
+  "M 500 665 Q 507 737 500 811",
 ];
 
 const perimeter = [
@@ -27,6 +28,14 @@ export function RelationshipMap() {
           <title id="relationship-map-title">{mapContent.title}</title>
           <desc id="relationship-map-description">{mapContent.diagramDescription}</desc>
           <defs>
+            <radialGradient id="map-portrait-fade">
+              <stop offset="0" stopColor="white" />
+              <stop offset="0.62" stopColor="white" />
+              <stop offset="1" stopColor="black" />
+            </radialGradient>
+            <mask id="map-portrait-mask" maskUnits="userSpaceOnUse" x="345" y="365" width="310" height="310">
+              <circle cx="500" cy="520" r="150" fill="url(#map-portrait-fade)" />
+            </mask>
             <marker id="web-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
               <path d="M2 2L10 6L2 10" fill="none" stroke="currentColor" strokeWidth="1.1" />
             </marker>
@@ -37,20 +46,23 @@ export function RelationshipMap() {
             <path d="M316 284Q502 233 686 285M704 834Q499 883 297 835" strokeDasharray="2 9" opacity=".35" />
           </g>
           <g className="map-center">
-            <path d="M345 520C337 454 400 407 499 403C591 403 658 449 655 521C655 590 592 638 502 638C410 642 344 590 345 520Z" fill="var(--color-paper)" stroke="var(--color-olive)" strokeOpacity=".45" strokeDasharray="2 5" />
-            <text x="500" y="492" textAnchor="middle" className="map-center-title">
-              <tspan x="500">{mapContent.center[0]}</tspan><tspan x="500" dy="36">{mapContent.center[1]}</tspan>
-            </text>
-            <text x="500" y="563" textAnchor="middle" className="map-center-description">
-              <tspan x="500">{mapContent.centerDescription[0]}</tspan><tspan x="500" dy="23">{mapContent.centerDescription[1]}</tspan>
-            </text>
+            <image
+              href="/portraits/paula-alambic.svg"
+              x="345" y="365" width="310" height="310"
+              preserveAspectRatio="xMidYMid slice"
+              mask="url(#map-portrait-mask)"
+              opacity="0.24"
+              aria-hidden="true"
+            />
+            <HighlightedTitle title={mapContent.center[0]} x={500} y={510} width={155} className="map-center-title" />
+            <HighlightedTitle title={mapContent.center[1]} x={500} y={550} width={180} className="map-center-title" />
           </g>
           {mapContent.nodes.map((node) => (
             <a key={node.id} href={`#elaboracion-${node.id}`} className="map-node" aria-label={`${node.title}: ${node.description}`}>
               <title>{node.description}</title>
               <g transform={`translate(${node.x - 150} ${node.y - 112})`}>
-                <image href={`/illustrations/${node.id}.svg`} width="300" height="225" />
-                <text x="150" y="251" textAnchor="middle" className="illustration-title">{node.title}</text>
+                <HighlightedTitle title={node.title} x={150} y={20} width={Math.max(150, node.title.length * 13)} />
+                <image href={`/illustrations/${node.id}.svg`} y="34" width="300" height="225" />
                 <text x="150" y="278" textAnchor="middle" className="map-node-caption">{node.caption}</text>
               </g>
             </a>

@@ -38,5 +38,13 @@
     "label": "404 / Un petit détour",
     "title": "Rien ne pousse ici. Pour l’instant.",
     "return": "Retrouver l’univers de Paula"
+  },
+  "Footer": {
+    "call": "Appeler le {phone}",
+    "email": "Écrire à {email}",
+    "work": "Travail",
+    "education": "Formation",
+    "workPlaceholder": "Prochainement : projets et collaborations.",
+    "educationPlaceholder": "Prochainement : formation et apprentissages."
   }
 }

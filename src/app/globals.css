@@ -22,7 +22,6 @@
 }
 
 html:has(.portfolio) {
-  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 }
 
@@ -37,7 +36,219 @@ html:has(.portfolio) {
 }
 
 .portrait {
-  width: min(82vw, 440px, 60svh);
+  width: min(100%, 560px, 64svh);
+}
+
+.portrait-name {
+  fill: var(--color-olive);
+  font-family: var(--font-cormorant), serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.012em;
+  font-kerning: normal;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+/* A still botanical frontispiece; the following pages pass over it. */
+.portfolio {
+  isolation: isolate;
+}
+
+.about-stage {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  padding: 2rem 1rem;
+  background: var(--color-paper);
+}
+
+.about-portrait-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 0;
+  width: 100%;
+}
+
+/* No overflow/transform on these ancestors: every sheet shares the scroll viewport. */
+.story-pages {
+  position: relative;
+  z-index: 1;
+  --journey-height: 4.5rem;
+}
+
+.story-pages > section {
+  position: sticky;
+  top: var(--sheet-top, 0px);
+  border-top: 1px solid var(--color-line);
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 0 -18px 48px rgb(41 51 39 / 7%);
+  scroll-margin-top: calc(var(--journey-height) + 1rem);
+}
+
+.story-pages > #map { z-index: 1; background: var(--color-parchment); }
+.story-pages > #elaborate { z-index: 2; background: var(--color-paper); }
+.story-pages > #ecosystems { z-index: 3; background: var(--color-parchment); }
+
+.journey-nav {
+  position: fixed;
+  inset: 0 0 auto;
+  transform: translateY(-100%);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 260ms ease, visibility 260ms;
+  z-index: 10;
+  background: var(--color-paper);
+  border-bottom: 1px solid var(--color-line);
+  overflow-x: auto;
+}
+
+.journey-nav[data-visible="true"] {
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-nav { transition: none; }
+}
+
+.journey-nav ol {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  min-width: 100%;
+  min-height: 4.5rem;
+  padding: 0.5rem clamp(1rem, 4vw, 4rem);
+}
+
+.journey-nav li { display: flex; align-items: center; }
+.journey-nav li + li::before {
+  content: "⟶";
+  margin-inline: clamp(0.5rem, 2vw, 2rem);
+  color: var(--color-amber);
+}
+.journey-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  white-space: nowrap;
+  font-size: clamp(0.75rem, 1.4vw, 0.95rem);
+  color: var(--color-ink-muted);
+  text-underline-offset: 0.5rem;
+}
+.journey-nav a[aria-current="location"] { color: var(--color-olive); text-decoration: underline; }
+.journey-nav a:hover { color: var(--color-rose); }
+.journey-brand { font-family: var(--font-cormorant), serif; font-size: 1.25rem; font-weight: 500; }
+.portfolio .elaboration-step { scroll-margin-top: 6rem; }
+
+.portfolio-footer {
+  position: relative;
+  z-index: 1;
+  background: var(--color-paper);
+}
+
+.ecosystem-stories {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 5rem;
+  width: min(100%, 1100px);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .ecosystem-stories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+}
+
+.botanical-story {
+  display: block;
+  align-self: center;
+  max-width: 440px;
+  width: 100%;
+  justify-self: center;
+}
+
+.botanical-story-heading {
+  padding-inline: 1rem;
+}
+
+.botanical-story-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-ink-muted);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.botanical-story-eyebrow span {
+  color: var(--color-amber);
+  font-family: var(--font-cormorant), serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.botanical-story-heading h3 {
+  margin-top: 0.5rem;
+  color: var(--color-olive);
+  font-family: var(--font-cormorant), serif;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-style: italic;
+  line-height: 1.15;
+}
+
+.botanical-story-drawing {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+.botanical-annotation {
+  fill: var(--color-ink-muted);
+  font-family: var(--font-cormorant), serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.botanical-story-caption {
+  max-width: 32ch;
+  margin: -1rem auto 0;
+  padding-inline: 1rem;
+  color: var(--color-ink-muted);
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.botanical-story-closing {
+  margin-top: 0.6rem;
+  color: var(--color-olive);
+  font-family: var(--font-cormorant), serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Short windows and reduced motion keep every part of the opening reachable. */
+@media (max-height: 620px), (prefers-reduced-motion: reduce) {
+  .about-stage,
+  .story-pages > section {
+    position: relative;
+    top: auto;
+  }
+
+  .story-pages > section {
+    box-shadow: none;
+  }
 }
 
 .glass-languages {
@@ -144,7 +355,6 @@ body {
   font-size: 34px;
 }
 
-.map-center-description,
 .map-node-caption {
   fill: var(--color-ink-muted);
   font-family: var(--font-cormorant), serif;
@@ -241,4 +451,33 @@ body {
     grid-column: 3;
     margin-top: 0;
   }
+}
+
+/* Reverse the pencil passes as Map enters; scrolling back redraws them. */
+.portrait-sketch-scroll {
+  stroke-dasharray: 1;
+  stroke-dashoffset: var(--portrait-erase, 0);
+}
+@media (max-height: 620px), (prefers-reduced-motion: reduce) {
+  .portrait-sketch-scroll { stroke-dashoffset: 0; }
+}
+
+/* One entrance per page load; separate from the reversible scroll erasure. */
+.portrait-sketch-pass {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: portrait-pencil-in 3.2s ease-in-out both;
+}
+.portrait-sketch-outline {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: portrait-pencil-in 2.4s ease-out both;
+}
+@keyframes portrait-pencil-in {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portrait-sketch-pass,
+  .portrait-sketch-outline { animation: none; }
 }

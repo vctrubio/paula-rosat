@@ -38,5 +38,13 @@
     "label": "404 / Un petit desviament",
     "title": "Aquí encara no hi creix res.",
     "return": "Tornar al món de la Paula"
+  },
+  "Footer": {
+    "call": "Trucar al {phone}",
+    "email": "Escriure a {email}",
+    "work": "Treball",
+    "education": "Formació",
+    "workPlaceholder": "Pròximament: projectes i col·laboracions.",
+    "educationPlaceholder": "Pròximament: formació i aprenentatges."
   }
 }
