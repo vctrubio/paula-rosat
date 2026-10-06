@@ -36,7 +36,7 @@ html:has(.portfolio) {
   scroll-snap-align: start;
 }
 
-.portrait-placeholder {
+.portrait {
   width: min(82vw, 440px, 60svh);
 }
 
@@ -107,4 +107,138 @@ body {
   line-height: 1.6;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+/* Dibujos y mapa: tinta vegetal, lavados suaves y profundidad por capas. */
+.relationship-map {
+  width: 100%;
+  max-width: 1050px;
+  margin: 2rem auto 0;
+}
+
+.map-scroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
+
+.relationship-web {
+  display: block;
+  width: 100%;
+  min-width: 660px;
+  color: var(--color-olive);
+}
+
+.illustration-title {
+  fill: var(--color-ink);
+  font-family: var(--font-cormorant), serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+.map-center-title {
+  fill: var(--color-ink);
+  font-family: var(--font-cormorant), serif;
+  font-size: 34px;
+}
+
+.map-center-description,
+.map-node-caption {
+  fill: var(--color-ink-muted);
+  font-family: var(--font-cormorant), serif;
+  font-size: 20px;
+}
+
+.map-node-caption {
+  font-size: 19px;
+  font-style: italic;
+}
+
+.map-node .illustration-title {
+  transition: fill 160ms ease;
+}
+
+.map-node:hover .illustration-title,
+.map-node:focus-visible .illustration-title {
+  fill: var(--color-rose);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.botanical-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.elaboration-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  column-gap: 1rem;
+  padding: 1.5rem 0 4rem;
+  scroll-margin-top: 2rem;
+}
+
+.elaboration-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
+  left: 15px;
+  width: 1px;
+  background: linear-gradient(var(--color-line), var(--color-olive));
+  opacity: 0.45;
+}
+
+.elaboration-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid var(--color-olive);
+  border-bottom: 1px solid var(--color-olive);
+  transform: rotate(45deg);
+  opacity: 0.55;
+}
+
+.step-number {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 0.75rem;
+  text-align: center;
+  font-family: var(--font-cormorant), serif;
+  font-size: 20px;
+  font-style: italic;
+  color: var(--color-rose);
+}
+
+.step-illustration {
+  grid-column: 2;
+  max-width: 320px;
+  justify-self: center;
+}
+
+.step-copy {
+  grid-column: 2;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .elaboration-step {
+    grid-template-columns: 32px minmax(0, 300px) minmax(0, 1fr);
+    gap: 2rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .step-copy {
+    grid-column: 3;
+    margin-top: 0;
+  }
 }

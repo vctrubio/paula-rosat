@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Metadata");
   return {
     metadataBase: new URL("https://paularosat.com"),
-    title: { default: t("title"), template: "%s | Paula Rosat" },
+    title: t("title"),
     description: t("description"),
   };
 }

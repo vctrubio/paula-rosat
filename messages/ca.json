@@ -12,7 +12,7 @@
     "skip": "Saltar al contingut"
   },
   "Metadata": {
-    "title": "Paula Rosat — Alquímia botànica i cuina",
+    "title": "Paula Rosat",
     "description": "El món de Paula Rosat. Alquímia botànica, essències de plantes i cuina."
   },
   "About": {
@@ -24,7 +24,7 @@
     "specimen": "Estudis botànics",
     "caption": "Fulla · flor · essència",
     "spokenLanguages": "Parlo castellà, anglès, francès i català.",
-    "portraitPlaceholder": "Espai per a un retrat de Paula Rosat"
+    "portrait": "Retrat il·lustrat de Paula Rosat, amb ulls d’avellana i ambre i traços fins de dibuix."
   },
   "Map": {
     "description": "Un espai per als llocs i les connexions del món de la Paula.",

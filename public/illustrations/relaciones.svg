@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" fill="none">
+<g stroke="#394735" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+<path d="M57 168C27 120 76 43 149 37C224 21 283 86 265 151C260 206 190 220 129 211C92 204 68 191 57 168Z" fill="#d9dfcc" fill-opacity=".28" stroke="none"/>
+<path d="M109 213C136 185 148 150 156 106M207 213C183 178 179 145 169 115" stroke-width="1.8"/>
+<path d="M147 146C112 141 87 121 79 95C113 91 146 113 147 146ZM159 112C126 103 115 79 119 52C147 63 163 84 159 112ZM169 121C177 85 201 62 231 57C227 90 207 116 169 121Z" fill="#71816a" fill-opacity=".18"/>
+<path d="M85 99L147 146M121 61L159 112M176 114L224 64M99 110L104 126M111 120L128 119M192 95L195 80M202 86L217 85" stroke-opacity=".6"/>
+<path d="M204 196L225 147L247 114M220 160L204 136M224 151L222 127M229 143L239 128M215 174L238 164M210 185L231 181M229 144L252 138M237 128L260 123"/>
+<g fill="#8b4e50" fill-opacity=".32"><circle cx="115" cy="162" r="8"/><circle cx="129" cy="157" r="8"/><circle cx="140" cy="166" r="8"/><circle cx="124" cy="174" r="8"/><circle cx="137" cy="179" r="8"/><circle cx="125" cy="187" r="7"/></g>
+<g fill="#71816a" fill-opacity=".26"><circle cx="223" cy="182" r="6"/><circle cx="234" cy="173" r="6"/><circle cx="242" cy="183" r="6"/></g>
+<path d="M107 45C138 23 191 24 217 40M208 31L218 40L207 44M74 176C61 148 64 128 69 115M60 122L69 113L73 126" stroke-opacity=".45"/>
+</g></svg>
