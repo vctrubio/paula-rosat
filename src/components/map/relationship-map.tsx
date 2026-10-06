@@ -6,8 +6,7 @@ import { BranchingCenter } from "./branching-center";
 export function RelationshipMap({ hideText = false }: { hideText?: boolean }) {
   return (
     <figure className="relationship-map">
-      <p className="mb-4 text-center text-xs text-ink-muted sm:hidden">{mapContent.mobileHint}</p>
-      <div className="map-scroll" tabIndex={0} role="region" aria-label={mapContent.title}>
+      <div className="map-frame">
         <svg viewBox="0 0 1000 1180" className="relationship-web" role="group" aria-labelledby="relationship-map-title relationship-map-description">
           <title id="relationship-map-title">{mapContent.title}</title>
           <desc id="relationship-map-description">{mapContent.diagramDescription}</desc>

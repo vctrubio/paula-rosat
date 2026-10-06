@@ -339,17 +339,16 @@ body {
   margin: 2rem auto 0;
 }
 
-.map-scroll {
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-line) transparent;
+.map-frame {
+  width: 100%;
+  min-width: 0;
 }
 
 .relationship-web {
   display: block;
   width: 100%;
-  min-width: 660px;
+  height: auto;
+  min-width: 0;
   color: var(--color-olive);
 }
 

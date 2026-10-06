@@ -4,7 +4,6 @@ export const mapContent = {
   introduction: "Leer el territorio, percibir las relaciones que lo conforman y encontrar formas de traducirlo en elaboraciones gastronómicas que permitan compartirlo.",
   center: ["Percibir", "relaciones"],
   centerCaptionLines: ["La red de vínculos", "entre lo material,", "lo vivo y lo cultural."],
-  mobileHint: "Desliza el mapa para explorar sus relaciones.",
   diagramDescription: "Percibir relaciones ocupa el centro de un círculo con la frase la red de vínculos entre lo material, lo vivo y lo cultural. Territorio se bifurca hacia Materia y Conocimiento; una ruta continúa hacia Experiencia y la otra hacia Transformación. Ambas se reúnen en Compartir. Líneas más sutiles conectan el círculo central con cada ámbito. Cada dibujo enlaza con su paso en la elaboración.",
   nodes: [
     { id: "territorio", title: "Territorio", captionLines: ["Observar, escuchar,", "habitar, cosechar."], description: "Montaña, sol, río y aire. El suelo, el clima, los aromas, los ecosistemas, la cultura, los productores y las estaciones dan contexto a la materia.", x: 500, y: 145 },
