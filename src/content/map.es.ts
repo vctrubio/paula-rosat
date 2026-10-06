@@ -23,7 +23,7 @@ export const procesoContent = {
   title: "Sorbete de mora y enebro",
   introduction: "Elaborar un sabor que nace de un territorio, de sus relaciones y aromas.",
   steps: [
-    { id: "territorio", title: "Territorio", subtitle: "Todo empieza por escuchar un lugar.", body: "Observar el paisaje, el suelo, el agua, la luz y la estación. En el ejemplo, la mora y el enebro habitan un mismo entorno: ese vínculo es el punto de partida, el bosque mediterráneo" },
+    { id: "territorio", title: "Territorio", subtitle: "Todo empieza por escuchar el lugar.", body: "Observar el paisaje, el suelo, el agua, la luz y la estación. En el ejemplo, la mora y el enebro habitan un mismo entorno: el bosque mediterráneo. Ese vínculo es el punto de partida, " },
     { id: "materia", title: "Materia", subtitle: "Conocer antes de intervenir.", body: "La mora aporta dulzor, jugosidad y notas silvestres. El enebro, un carácter aromático, resinoso y de bosque. Explorar su expresión sensorial: observar, tocar, oler, degustar." },
     { id: "conocimiento", title: "Conocimiento", subtitle: "El tiempo también es un ingrediente.", body: "Investigar, probar, equivocarse y volver a probar. Poner en diálogo los saberes ancestrales, la botánica, la técnica y la experiencia sensorial para comprender la materia." },
     { id: "relaciones", title: "Relaciones", subtitle: "Encontrar el hilo que las une.", body: "La dulzura oscura y redonda de la mora permite tensar la composición con el carácter punzante del enebro. El territorio orienta la combinación; las pruebas permiten afinar su equilibrio." },

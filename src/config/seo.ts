@@ -6,7 +6,7 @@ export const seoConfig = {
   url: "https://paula-rosat.vercel.app",
   name: "Paula Rosat",
   title: "Paula Rosat",
-  description: "Co-creando con la naturaleza a través de los sentidos.",
+  description: "Creativa heladera y destiladora de plantas. Co-creando con la naturaleza a través de los sentidos.",
   locale: "es_ES",
   icons: {
     icon: { url: "/icon.png", type: "image/png", sizes: "48x48" },
