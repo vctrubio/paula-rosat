@@ -15,7 +15,7 @@ export function ShortBio() {
         {lines.map(({ text, offset }) => (
           <span key={text} className="block not-first:mt-3">
             {Array.from(text.replaceAll("-", "\u2011")).map((letter, index) => (
-              <span key={index} className="bio-letter" style={{ "--letter-delay": `${(offset + index) * 0.025}s` } as CSSProperties}>{letter}</span>
+              <span key={index} className="bio-letter" style={{ "--letter-delay": `${(offset + index) * 0.022}s` } as CSSProperties}>{letter}</span>
             ))}
           </span>
         ))}

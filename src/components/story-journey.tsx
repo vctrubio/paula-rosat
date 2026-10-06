@@ -7,6 +7,7 @@ export function StoryJourney({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
   const nav = useRef<HTMLElement>(null);
   const [active, setActive] = useState("about");
+  const [footerVisible, setFooterVisible] = useState(false);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -16,6 +17,7 @@ export function StoryJourney({ children }: { children: ReactNode }) {
     const sections = Array.from(container.querySelectorAll<HTMLElement>(":scope > section"));
     const about = document.getElementById("about");
     const portrait = about?.querySelector<HTMLElement>(".portrait");
+    const footer = document.getElementById("contacto");
     let frame = 0;
     function updateActive() {
       frame = 0;
@@ -38,17 +40,21 @@ export function StoryJourney({ children }: { children: ReactNode }) {
         nameGone = nameProgress >= 1;
       }
       const entered = distance > 1;
-      setVisible(nameGone);
+      const footerEntered = !!footer && footer.getBoundingClientRect().top < window.innerHeight;
+      setVisible(nameGone || footerEntered);
       // Use document flow distances, not the moving positions of sticky sheets.
       const scroll = window.scrollY;
       const containerTop = container!.getBoundingClientRect().top + scroll;
+      setFooterVisible(footerEntered);
       const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
       let sectionStart = containerTop - navigation!.offsetHeight;
       const clamp = (value: number) => Math.max(0, Math.min(1, value));
       navigation!.style.setProperty("--progress-about", String(clamp(scroll / Math.max(1, sectionStart))));
       sections.forEach((section, index) => {
         const nextStart = sectionStart + section.offsetHeight;
-        const sectionEnd = index === sections.length - 1 ? maxScroll : Math.min(nextStart, maxScroll);
+        const sectionEnd = index === sections.length - 1 && footer
+          ? Math.min(footer.getBoundingClientRect().top + scroll - window.innerHeight, maxScroll)
+          : Math.min(nextStart, maxScroll);
         const progress = clamp((scroll - sectionStart) / Math.max(1, sectionEnd - sectionStart));
         navigation!.style.setProperty(`--progress-${section.id}`, String(progress));
         sectionStart = nextStart;
@@ -74,6 +80,7 @@ export function StoryJourney({ children }: { children: ReactNode }) {
     const observer = new ResizeObserver(measure);
     observer.observe(navigation);
     if (portrait) observer.observe(portrait);
+    if (footer) observer.observe(footer);
     sections.forEach((section) => observer.observe(section));
     measure();
     window.addEventListener("resize", measure);
@@ -104,7 +111,7 @@ export function StoryJourney({ children }: { children: ReactNode }) {
 
   return (
     <div ref={root} className="story-pages">
-      <JourneyNavigation navRef={nav} active={active} visible={visible} onNavigate={navigate} />
+      <JourneyNavigation navRef={nav} active={active} visible={visible} footerVisible={footerVisible} onNavigate={navigate} />
       {children}
     </div>
   );

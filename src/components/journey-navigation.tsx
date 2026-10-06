@@ -1,5 +1,7 @@
 "use client";
 
+import { BackToTop } from "@/components/back-to-top";
+import { SocialLinks } from "@/components/social-links";
 import Link from "next/link";
 import type { CSSProperties, MouseEvent, Ref } from "react";
 import { BrandMark } from "@/components/brand-mark";
@@ -11,10 +13,11 @@ const stops = [
   { id: "processo", label: "Processo" },
 ];
 
-export function JourneyNavigation({ navRef, active, visible = true, onNavigate }: {
+export function JourneyNavigation({ navRef, active, visible = true, footerVisible = false, onNavigate }: {
   navRef?: Ref<HTMLElement>;
   active?: string;
   visible?: boolean;
+  footerVisible?: boolean;
   onNavigate?: (event: MouseEvent<HTMLAnchorElement>, id: string) => void;
 }) {
   return (
@@ -30,6 +33,10 @@ export function JourneyNavigation({ navRef, active, visible = true, onNavigate }
           </li>
         ))}
       </ol>
+      <div className="nav-actions" data-footer={footerVisible}>
+        <div className="nav-socials" inert={footerVisible} aria-hidden={footerVisible}><SocialLinks /></div>
+        <div className="nav-top" inert={!footerVisible} aria-hidden={!footerVisible}><BackToTop /></div>
+      </div>
     </nav>
   );
 }

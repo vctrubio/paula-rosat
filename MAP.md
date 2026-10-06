@@ -137,7 +137,7 @@ Ejemplo tomado del documento de referencia. Se utiliza como narración conceptua
 
 **Compartir — La elaboración encuentra su sentido en los demás.** Llevarlo a la mesa, escuchar a quien lo prueba y compartir lo aprendido. La experiencia de los demás devuelve preguntas al territorio: el recorrido vuelve a empezar.
 
-El paso Relaciones utiliza `public/illustrations/relaciones.webp`, con versiones PNG y SVG: una estampa vertical ocre de dos rodajas de cítrico, una en positivo y otra en negativo, unidas por un tallo y una división ondulada. El marco y la textura ligera evocan la referencia aportada. La fuente editable está en `docs/artwork/relaciones-mark.svg`; los espacios sin tinta son transparentes. El nombre y la explicación siguen en la maquetación de Elaborar. No añade un séptimo ámbito exterior al mapa; desarrolla el concepto central dentro del ejemplo.
+El paso Relaciones utiliza `public/illustrations/relaciones.webp`, con versiones PNG y SVG: una estampa vertical ocre de dos rodajas de cítrico, una en positivo y otra en negativo, unidas por un tallo y una división ondulada. No tiene marco; los segmentos irregulares, la ligera inclinación y la silueta orgánica le dan un carácter más libre. La fuente editable está en `docs/artwork/relaciones-mark.svg`; los espacios sin tinta son transparentes. El nombre y la explicación siguen en la maquetación de Elaborar. No añade un séptimo ámbito exterior al mapa; desarrolla el concepto central dentro del ejemplo.
 
 ## Lenguaje visual
 

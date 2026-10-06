@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" fill="none" stroke="#626858" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+<defs>
+<g id="leaf"><path d="M0 0C-20-3-39-19-40-39C-16-34-2-17 0 0Z" fill="#626858" fill-opacity=".055"/><path d="M0 0Q-16-14-34-33" opacity=".5"/></g>
+<g id="seed"><ellipse rx="3" ry="7" transform="rotate(-25)" fill="#b8873f" fill-opacity=".25" stroke="#b8873f"/></g>
+</defs>
+<!-- A tall, loose fennel stem leans toward the still. -->
+<path d="M298 499C272 433 286 365 249 293C218 230 237 179 203 133M249 292C210 279 182 249 164 214M269 351C294 312 305 275 300 234M285 418C245 405 220 379 204 350"/>
+<g opacity=".85">
+<path d="M203 133L157 111M203 133L174 91M203 133L199 80M203 133L225 90M203 133L249 107"/>
+<use href="#seed" x="157" y="105"/><use href="#seed" x="174" y="85"/><use href="#seed" x="199" y="74"/><use href="#seed" x="225" y="84"/><use href="#seed" x="249" y="101"/>
+<path d="M164 214L135 203M164 214L142 184M164 214L165 177M164 214L187 188"/>
+<use href="#seed" x="135" y="197"/><use href="#seed" x="142" y="178"/><use href="#seed" x="165" y="171"/><use href="#seed" x="187" y="182"/>
+<path d="M300 234L281 204M300 234L306 197M300 234L329 211"/>
+<use href="#seed" x="281" y="198"/><use href="#seed" x="306" y="191"/><use href="#seed" x="329" y="205"/>
+</g>
+<!-- Narrow rosemary leaves and low sage soften the base. -->
+<path d="M227 504C185 459 168 413 136 365M200 474L170 459M188 454L177 427M173 430L148 415M156 402L150 379M137 367L130 345M177 437L179 410M204 482L204 451"/>
+<path d="M336 504Q347 451 326 408M344 465Q380 441 391 411"/>
+<use href="#leaf" transform="translate(341 477) rotate(-12) scale(.85)"/><use href="#leaf" transform="translate(337 443) rotate(60) scale(.65)"/>
+<use href="#leaf" transform="translate(371 447) rotate(96) scale(.7)"/>
+<!-- An asymmetric bay branch, with smaller side shoots. -->
+<path d="M704 507C724 461 765 428 780 375C797 315 817 278 838 228"/>
+<use href="#leaf" transform="translate(724 472) rotate(-23) scale(1.1)"/><use href="#leaf" transform="translate(744 449) rotate(92)"/>
+<use href="#leaf" transform="translate(766 412) rotate(-14)"/><use href="#leaf" transform="translate(781 374) rotate(103) scale(1.1)"/>
+<use href="#leaf" transform="translate(793 336) rotate(-15) scale(.9)"/><use href="#leaf" transform="translate(811 298) rotate(102) scale(.9)"/>
+<use href="#leaf" transform="translate(831 247) rotate(22) scale(.8)"/>
+<path d="M762 503Q820 460 866 445M806 475Q810 446 801 421M836 457Q860 468 883 461"/>
+<use href="#leaf" transform="translate(809 455) rotate(18) scale(.6)"/><use href="#leaf" transform="translate(850 451) rotate(88) scale(.65)"/>
+<!-- Fine roots, not a frame. -->
+<g opacity=".4" stroke-width="1">
+<path d="M227 504Q275 496 336 504M681 508Q731 499 791 505M298 503C310 526 288 552 267 572M302 531L335 550L354 552M287 551L258 553M336 505L351 525L380 534M351 525L343 547M704 507C690 533 713 550 708 578M695 533L668 550L654 575M710 555L739 568M762 506L790 530L821 540M790 530L782 555"/>
+<path d="M382 509Q494 505 612 510"/>
+</g>
+</svg>

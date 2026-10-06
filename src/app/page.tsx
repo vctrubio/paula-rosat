@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { homeMetadata } from "@/config/seo";
+import { SiteFooter } from "@/components/site-footer";
 import { StoryJourney } from "@/components/story-journey";
 import { AboutSection } from "@/components/sections/about-section";
 import { MapSection } from "@/components/sections/map-section";
@@ -26,6 +27,7 @@ export default function Home() {
           {/* <EcosystemSection /> */}
         </StoryJourney>
       </main>
+      <SiteFooter />
     </div>
   );
 }
