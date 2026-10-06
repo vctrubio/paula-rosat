@@ -21,7 +21,7 @@ export function RelationshipMap({ hideText = false }: { hideText?: boolean }) {
             ))}
           </g>
           {mapContent.nodes.map((node) => (
-            <a key={node.id} href={`#elaboracion-${node.id}`} className="map-node" aria-label={`${node.title}: ${node.captionLines.join(" ")}`}>
+            <a key={node.id} href={`#proceso-${node.id}`} className="map-node" aria-label={`${node.title}: ${node.captionLines.join(" ")}`}>
               <g transform={`translate(${node.x - 150} ${node.y - 112})`}>
                 <image href={illustrationSource(node.id)} data-art-src={illustrationSource(node.id)} className="art-image" width="300" height="225" />
                 {!hideText && <text x="150" y="260" textAnchor="middle" className="map-node-title">{node.title.toLocaleUpperCase("es")}</text>}

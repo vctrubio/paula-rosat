@@ -5,7 +5,7 @@
     "language": "Langue",
     "about": "À propos",
     "map": "Carte",
-    "elaborate": "Élaborer",
+    "proceso": "Processus",
     "backToAbout": "Retour à À propos",
     "takingShape": "Un monde prend forme",
     "notebook": "Carnet de marque",
@@ -30,7 +30,7 @@
     "description": "Un espace pour les lieux et les liens qui composent l’univers de Paula.",
     "placeholder": "Une carte à déployer"
   },
-  "Elaborate": {
+  "Proceso": {
     "description": "Un espace pour explorer le travail, le processus et ce qui prend forme au fil du chemin.",
     "placeholder": "Des idées prennent racine."
   },

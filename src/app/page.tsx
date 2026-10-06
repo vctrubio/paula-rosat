@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { StoryJourney } from "@/components/story-journey";
 import { AboutSection } from "@/components/sections/about-section";
 import { MapSection } from "@/components/sections/map-section";
-import { ElaborateSection } from "@/components/sections/elaborate-section";
+import { ProcesoSection } from "@/components/sections/proceso-section";
 import { ArtworkReveal } from "@/components/artwork-reveal";
 import { artworkSources } from "@/content/artwork-assets";
 // import { EcosystemSection } from "@/components/sections/ecosystem-section";
@@ -23,7 +23,7 @@ export default function Home() {
         <AboutSection />
         <StoryJourney>
           <MapSection />
-          <ElaborateSection />
+          <ProcesoSection />
           {/* <EcosystemSection /> */}
         </StoryJourney>
       </main>

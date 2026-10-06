@@ -19,15 +19,15 @@ export const mapContent = {
 export type MapNodeId = (typeof mapContent.nodes)[number]["id"];
 export type IllustrationId = MapNodeId | "relaciones";
 
-export const elaborationContent = {
+export const procesoContent = {
   title: "Sorbete de mora y enebro",
-  introduction: "Elaborar un sabor que nace de un territorio y sus relaciones.",
+  introduction: "Elaborar un sabor que nace de un territorio, de sus relaciones y aromas.",
   steps: [
     { id: "territorio", title: "Territorio", subtitle: "Todo empieza por escuchar un lugar.", body: "Observar el paisaje, el suelo, el agua, la luz y la estación. En el ejemplo, la mora y el enebro habitan un mismo entorno: ese vínculo es el punto de partida, el bosque mediterráneo" },
     { id: "materia", title: "Materia", subtitle: "Conocer antes de intervenir.", body: "La mora aporta dulzor, jugosidad y notas silvestres. El enebro, un carácter aromático, resinoso y de bosque. Explorar su expresión sensorial: observar, tocar, oler, degustar." },
     { id: "conocimiento", title: "Conocimiento", subtitle: "El tiempo también es un ingrediente.", body: "Investigar, probar, equivocarse y volver a probar. Poner en diálogo los saberes ancestrales, la botánica, la técnica y la experiencia sensorial para comprender la materia." },
     { id: "relaciones", title: "Relaciones", subtitle: "Encontrar el hilo que las une.", body: "La dulzura oscura y redonda de la mora permite tensar la composición con el carácter punzante del enebro. El territorio orienta la combinación; las pruebas permiten afinar su equilibrio." },
-    { id: "transformacion", title: "Transformación", subtitle: "Extraer para expresar.", body: "Destilar las bayas de enebro para obtener un hidrolato e integrarlo en el helado. Ajustar textura, dulzor y equilibrio aromático al servicio de la expresión de la materia." },
+    { id: "transformacion", title: "Transformación", subtitle: "Extraer para expresar.", body: "Destilar las bayas de enebro para obtener un hidrolato e integrarlo en el sorbete. Ajustar textura, dulzor y equilibrio aromático al servicio de la expresión de la materia." },
     { id: "experiencia", title: "Experiencia", subtitle: "El paisaje se convierte en sensación.", body: "Crear una sinergia capaz de transportarnos al lugar donde habitan estos ingredientes, con un final fresco y persistente. Lo que importa es lo que despierta: sensaciones de bosque, recuerdos, asociaciones y curiosidad." },
     { id: "compartir", title: "Compartir", subtitle: "La elaboración encuentra su sentido en los demás.", body: "Llevarlo a la mesa, compartir para disfrutar, habitar las sensaciones y dejar espacio al asombro. La experiencia de los demás devuelve nuevas percepciones y amplía la mirada. El recorrido vuelve a empezar." },
   ],

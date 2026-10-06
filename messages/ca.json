@@ -5,7 +5,7 @@
     "language": "Idioma",
     "about": "Sobre mi",
     "map": "Mapa",
-    "elaborate": "Elaborar",
+    "proceso": "Procés",
     "backToAbout": "Tornar a Sobre mi",
     "takingShape": "Un món que pren forma",
     "notebook": "Quadern de marca",
@@ -30,7 +30,7 @@
     "description": "Un espai per als llocs i les connexions del món de la Paula.",
     "placeholder": "Un mapa per desplegar"
   },
-  "Elaborate": {
+  "Proceso": {
     "description": "Un espai per explorar la feina, el procés i allò que va prenent forma pel camí.",
     "placeholder": "Idees que arrelen."
   },

@@ -5,7 +5,7 @@
     "language": "Idioma",
     "about": "Sobre mí",
     "map": "Mapa",
-    "elaborate": "Proceso",
+    "proceso": "Proceso",
     "backToAbout": "Volver a Sobre mí",
     "takingShape": "Un mundo que toma forma",
     "notebook": "Cuaderno de marca",
@@ -30,7 +30,7 @@
     "description": "Un espacio para los lugares y las conexiones del mundo de Paula.",
     "placeholder": "Un mapa por desplegar"
   },
-  "Elaborate": {
+  "Proceso": {
     "description": "Un espacio para explorar el trabajo, el proceso y lo que va tomando forma por el camino.",
     "placeholder": "Ideas que echan raíces."
   },

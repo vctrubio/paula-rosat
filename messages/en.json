@@ -5,7 +5,7 @@
     "language": "Language",
     "about": "About",
     "map": "Map",
-    "elaborate": "Elaborate",
+    "proceso": "Process",
     "backToAbout": "Back to About",
     "takingShape": "A world taking shape",
     "notebook": "Brand notebook",
@@ -30,7 +30,7 @@
     "description": "A space for the places and connections in Paula’s world.",
     "placeholder": "A map to unfold"
   },
-  "Elaborate": {
+  "Proceso": {
     "description": "A space to explore the work, the process, and what takes shape along the way.",
     "placeholder": "Ideas taking root."
   },

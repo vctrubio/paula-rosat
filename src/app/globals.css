@@ -164,7 +164,7 @@ html:has(.portfolio) {
 .journey-nav a[aria-current="location"] { color: var(--color-olive); }
 .journey-nav a:hover { color: var(--color-rose); }
 .journey-brand { font-family: var(--font-cormorant), serif; font-size: 1.25rem; font-weight: 500; }
-.portfolio .elaboration-step { scroll-margin-top: 6rem; }
+.portfolio .proceso-step { scroll-margin-top: 6rem; }
 
 .ecosystem-stories {
   display: grid;
@@ -404,7 +404,7 @@ body {
   overflow: visible;
 }
 
-.elaboration-step {
+.proceso-step {
   position: relative;
   display: grid;
   grid-template-columns: 32px minmax(0, 1fr);
@@ -413,7 +413,7 @@ body {
   scroll-margin-top: 2rem;
 }
 
-.elaboration-step:not(:last-child)::before {
+.proceso-step:not(:last-child)::before {
   content: "";
   position: absolute;
   top: 4rem;
@@ -424,7 +424,7 @@ body {
   opacity: 0.45;
 }
 
-.elaboration-step:not(:last-child)::after {
+.proceso-step:not(:last-child)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -461,7 +461,7 @@ body {
 }
 
 @media (min-width: 700px) {
-  .elaboration-step {
+  .proceso-step {
     grid-template-columns: 32px minmax(0, 300px) minmax(0, 1fr);
     gap: 2rem;
     padding-bottom: 4.5rem;

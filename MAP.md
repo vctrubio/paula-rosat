@@ -1,6 +1,6 @@
 # El mapa de Paula Rosat
 
-Documento de trabajo en español. Reúne el concepto, las referencias, los textos y las decisiones de representación del mapa y de la sección Elaborar. Las traducciones vendrán después, mediante i18n.
+Documento de trabajo en español. Reúne el concepto, las referencias, los textos y las decisiones de representación del mapa y de la sección Proceso. Las traducciones vendrán después, mediante i18n.
 
 ## Fuentes
 
@@ -22,13 +22,13 @@ Compartir no es un añadido al final: da sentido al trabajo. Una elaboración se
 
 ## Estructura de la web
 
-Se mantienen las tres secciones en este orden: Sobre mí, Mapa, Elaborar.
+Se mantienen las tres secciones en este orden: Sobre mí, Mapa, Proceso.
 
 - **Sobre mí:** retrato SVG dentro del óvalo, nombre curvado encima y selector de cuatro idiomas debajo. Sin barra de navegación.
 - **Mapa:** red de seis ámbitos alrededor de Percibir relaciones. Cada ilustración muestra debajo su título en mayúsculas y su frase breve, sin trazo resaltador; dos recorridos orgánicos parten de Territorio y se unen en Compartir.
-- **Elaborar:** recorrido de arriba abajo. Cada paso reutiliza la misma ilustración del mapa. En pantallas amplias, dibujo y explicación comparten una fila; la secuencia de pasos siempre es vertical.
+- **Proceso:** recorrido de arriba abajo. Cada paso reutiliza la misma ilustración del mapa. En pantallas amplias, dibujo y explicación comparten una fila; la secuencia de pasos siempre es vertical.
 
-El mapa funciona como entrada a Elaborar: cada nodo enlaza con el paso correspondiente. Los dos recorridos inferiores llegan hasta las hebras ocres sostenidas por las manos de Compartir, sin puntas de flecha. En pantallas estrechas se conserva la red y se permite desplazarla horizontalmente para explorar las ilustraciones. Elaborar se adapta a una columna.
+El mapa funciona como entrada a Proceso: cada nodo enlaza con el paso correspondiente. Los dos recorridos inferiores llegan hasta las hebras ocres sostenidas por las manos de Compartir, sin puntas de flecha. En pantallas estrechas se conserva la red y se permite desplazarla horizontalmente para explorar las ilustraciones. Proceso se adapta a una columna.
 
 No se han añadido mapas geográficos, ubicaciones, servicios comerciales ni datos biográficos.
 
@@ -42,7 +42,7 @@ No se han añadido mapas geográficos, ubicaciones, servicios comerciales ni dat
 
 **Dibujo:** composición compacta del referente elegido: sol ocre pequeño sobre tres picos angulares, una ladera roja, nieve crema, planos arcilla y pinos oscuros en el borde inferior. Conserva su silueta libre y la textura de impresión; el cielo y el espacio alrededor son transparentes. La corriente del mapa parte de debajo del dibujo y se bifurca hacia los dos lados.
 
-**Archivo:** `public/illustrations/territorio.png`. Ilustración con textura y fondo transparente, compartida por Mapa y Elaborar.
+**Archivo:** `public/illustrations/territorio.png`. Ilustración con textura y fondo transparente, compartida por Mapa y Proceso.
 
 ### Materia
 
@@ -103,9 +103,9 @@ El centro «Percibir relaciones» recupera la frase «La red de vínculos entre 
 - Territorio → Materia → Experiencia → Compartir. La corriente se vuelve gotas y luego trazos de helado.
 - Territorio → Conocimiento → Transformación → Compartir. Las lágrimas del ojo se calientan y llegan a la llama de la cerilla.
 
-Los dos recorridos terminan en hilos ocres que se unen a las manos de Compartir. Los tramos laterales se separan de las descripciones y rodean Materia y Conocimiento por fuera. Cada tramo tiene un dibujo propio, con la misma familia de trazos, colores y puntas. Es una lectura poética, no una secuencia rígida; el recorrido práctico de Elaborar mantiene su orden. Compartir devuelve nuevas preguntas al territorio aunque ese retorno no se dibuja todavía.
+Los dos recorridos terminan en hilos ocres que se unen a las manos de Compartir. Los tramos laterales se separan de las descripciones y rodean Materia y Conocimiento por fuera. Cada tramo tiene un dibujo propio, con la misma familia de trazos, colores y puntas. Es una lectura poética, no una secuencia rígida; el recorrido práctico de Proceso mantiene su orden. Compartir devuelve nuevas preguntas al territorio aunque ese retorno no se dibuja todavía.
 
-## Elaborar: helado de mora y enebro
+## Proceso: helado de mora y enebro
 
 Ejemplo tomado del documento de referencia. Se utiliza como narración conceptual: aún no hay una receta validada, cantidades, fotografías propias ni resultados documentados de Paula. No presentarlo como un proyecto realizado sin confirmación.
 
@@ -137,7 +137,7 @@ Ejemplo tomado del documento de referencia. Se utiliza como narración conceptua
 
 **Compartir — La elaboración encuentra su sentido en los demás.** Llevarlo a la mesa, escuchar a quien lo prueba y compartir lo aprendido. La experiencia de los demás devuelve preguntas al territorio: el recorrido vuelve a empezar.
 
-El paso Relaciones utiliza `public/illustrations/relaciones.webp`, con versiones PNG y SVG: una estampa vertical ocre de dos rodajas de cítrico, una en positivo y otra en negativo, unidas por un tallo y una división ondulada. No tiene marco; los segmentos irregulares, la ligera inclinación y la silueta orgánica le dan un carácter más libre. La fuente editable está en `docs/artwork/relaciones-mark.svg`; los espacios sin tinta son transparentes. El nombre y la explicación siguen en la maquetación de Elaborar. No añade un séptimo ámbito exterior al mapa; desarrolla el concepto central dentro del ejemplo.
+El paso Relaciones utiliza `public/illustrations/relaciones.webp`, con versiones PNG y SVG: una estampa vertical ocre de dos rodajas de cítrico, una en positivo y otra en negativo, unidas por un tallo y una división ondulada. No tiene marco; los segmentos irregulares, la ligera inclinación y la silueta orgánica le dan un carácter más libre. La fuente editable está en `docs/artwork/relaciones-mark.svg`; los espacios sin tinta son transparentes. El nombre y la explicación siguen en la maquetación de Proceso. No añade un séptimo ámbito exterior al mapa; desarrolla el concepto central dentro del ejemplo.
 
 ## Lenguaje visual
 
@@ -157,9 +157,9 @@ El paso Relaciones utiliza `public/illustrations/relaciones.webp`, con versiones
 | `src/components/map/relationship-map.tsx` | Red SVG, conexiones, títulos y enlaces a los pasos. |
 | `src/components/map/map-connections.tsx` | Corrientes, gotas, llama e hilos que unen los seis ámbitos. |
 | `src/components/map/botanical-illustration.tsx` | Marco SVG reutilizable para ilustración y título. |
-| `src/components/map/elaboration-step.tsx` | Un paso de la secuencia vertical. |
+| `src/components/map/proceso-step.tsx` | Un paso de la secuencia vertical. |
 | `src/components/sections/map-section.tsx` | Composición de la sección Mapa. |
-| `src/components/sections/elaborate-section.tsx` | Composición de la sección Elaborar. |
+| `src/components/sections/proceso-section.tsx` | Composición de la sección Proceso. |
 | `public/illustrations/` | Un dibujo SVG y seis PNG compartidos. |
 | `src/app/globals.css` | Tipografía SVG, red y recorrido vertical adaptable. |
 
@@ -207,7 +207,7 @@ Se ha eliminado el pie anterior, su componente, estilos y traducciones. El nuevo
 
 El centro muestra «PERCIBIR RELACIONES» y «La red de vínculos entre lo material, lo vivo y lo cultural» dentro de una red circular de ramas finas dibujada en SVG, inspirada en la referencia aportada. Las ramas crecen hacia fuera y dejan espacio para el texto. El círculo no tiene relleno: el fondo del mapa queda visible detrás del texto. No hay imagen raster ni resaltador.
 
-Los títulos de los seis ámbitos aparecen en mayúsculas y a menor tamaño debajo de cada imagen, seguidos de los textos del nuevo mapa de referencia en dos o tres líneas cuando hace falta, sin resaltador. `hideText` permanece disponible en el componente, desactivado por defecto. Las etiquetas accesibles leen el título y el texto visible; las descripciones ampliadas siguen en los datos. Los enlaces del mapa terminan en el borde del círculo. Elaborar mantiene los títulos y las explicaciones de los pasos.
+Los títulos de los seis ámbitos aparecen en mayúsculas y a menor tamaño debajo de cada imagen, seguidos de los textos del nuevo mapa de referencia en dos o tres líneas cuando hace falta, sin resaltador. `hideText` permanece disponible en el componente, desactivado por defecto. Las etiquetas accesibles leen el título y el texto visible; las descripciones ampliadas siguen en los datos. Los enlaces del mapa terminan en el borde del círculo. Proceso mantiene los títulos y las explicaciones de los pasos.
 
 ## Último ajuste de la portada
 
@@ -251,7 +251,7 @@ La red sirve como metáfora visual de relaciones y conocimiento. Es una ilustrac
 
 ### Paso a las otras secciones
 
-La portada usa `position: sticky` dentro de `main`. Mapa y Elaborar comparten `.story-pages`, una capa opaca con mayor orden de apilamiento, borde superior suavemente redondeado y sombra discreta. Al desplazar la página, esa capa pasa por encima de la portada; al volver hacia arriba, la descubre de nuevo. El pie tiene su propio fondo opaco.
+La portada usa `position: sticky` dentro de `main`. Mapa y Proceso comparten `.story-pages`, una capa opaca con mayor orden de apilamiento, borde superior suavemente redondeado y sombra discreta. Al desplazar la página, esa capa pasa por encima de la portada; al volver hacia arriba, la descubre de nuevo. El pie tiene su propio fondo opaco.
 
 El desplazamiento es nativo, sin interceptar rueda, teclado o gestos y sin animaciones JavaScript. Se retira el ajuste magnético de scroll para mantener continuo el paso entre capas. En ventanas de hasta 620 px de alto o cuando se solicita movimiento reducido, la portada vuelve al flujo normal para conservar la lectura completa.
 
@@ -267,4 +267,4 @@ No se ha ejecutado la app, build ni lint.
 
 ## Ecosistemas: sección independiente
 
-«Lo visible» y «Lo invisible» salen de la portada. Ahora forman `EcosystemSection`, en `src/components/sections/ecosystem-section.tsx`, inmediatamente después de Elaborar y antes del pie. El archivo de página solo compone las secciones. Las dos historias se muestran lado a lado desde 768 px y una debajo de otra en móvil; ya no están limitadas a escritorio. La portada vuelve a contener únicamente el retrato, el nombre y ShortBio.
+«Lo visible» y «Lo invisible» salen de la portada. Ahora forman `EcosystemSection`, en `src/components/sections/ecosystem-section.tsx`, inmediatamente después de Proceso y antes del pie. El archivo de página solo compone las secciones. Las dos historias se muestran lado a lado desde 768 px y una debajo de otra en móvil; ya no están limitadas a escritorio. La portada vuelve a contener únicamente el retrato, el nombre y ShortBio.

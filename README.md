@@ -16,17 +16,17 @@ Personal portfolio for Paula Rosat, alchemist and cook. A botanical field journa
 `src/app/page.tsx` composes this order:
 
 1. **AboutSection** (`#about`): curved Paula Rosat name, oval illustrated portrait, and ShortBio. Warm paper `#F7F4EB`.
-2. **MapSection** (`#map`): illustrated relationship map with links to elaboration steps. Parchment `#EAE4D4`.
-3. **ElaborateSection** (`#elaborate`): vertical blackberry and juniper example. Warm paper `#F7F4EB`.
+2. **MapSection** (`#map`): illustrated relationship map with links to process steps. Parchment `#EAE4D4`.
+3. **ProcesoSection** (`#proceso`): vertical blackberry and juniper example. Warm paper `#F7F4EB`.
 4. **EcosystemSection** (`#ecosystems`): “Lo visible” and “Lo invisible”, two columns on wider screens and stacked on mobile. Parchment `#EAE4D4`.
 
 The previous footer has been removed. The closing section will be designed separately.
 
 ### Layered scrolling and navigation
 
-`src/components/story-journey.tsx` wraps the three chapters after About and owns the journey navigation. The navbar is fixed outside document flow, hidden during About, and slides down from the viewport top as soon as Mi mapa enters the screen. It hides again when scrolling back to About; it never appears as a strip between chapters. It and shows the droplet before **Paula Rosat → Mapa → Elaborar → Ecosistema**. The name links back to About. The current chapter is underlined and marked with `aria-current="location"`. On narrow screens the horizontal journey can scroll.
+`src/components/story-journey.tsx` wraps the three chapters after About and owns the journey navigation. The navbar is fixed outside document flow, hidden during About, and slides down from the viewport top as soon as Mi mapa enters the screen. It hides again when scrolling back to About; it never appears as a strip between chapters. It and shows the droplet before **Paula Rosat → Mapa → Proceso → Ecosistema**. The name links back to About. The current chapter is underlined and marked with `aria-current="location"`. On narrow screens the horizontal journey can scroll.
 
-Each chapter scrolls over the previous chapter. Opaque alternating backgrounds and ascending stacking levels distinguish the sheets. A ResizeObserver measures each sheet and sets its sticky offset: tall chapters scroll fully before pinning at the bottom of the viewport. Do not replace this with `top: 0` for every sheet; Elaborar is taller than the viewport. Do not put overflow or transforms on scroll ancestors. Navigation uses flow offsets rather than pinned rectangles to return to chapter beginnings.
+Each chapter scrolls over the previous chapter. Opaque alternating backgrounds and ascending stacking levels distinguish the sheets. A ResizeObserver measures each sheet and sets its sticky offset: tall chapters scroll fully before pinning at the bottom of the viewport. Do not replace this with `top: 0` for every sheet; Proceso is taller than the viewport. Do not put overflow or transforms on scroll ancestors. Navigation uses flow offsets rather than pinned rectangles to return to chapter beginnings.
 
 Short windows (620px high or less) and reduced-motion preferences use ordinary section flow. Reduced motion also disables smooth scrolling. There is no wheel/touch interception or forced scroll snapping. CSS lives in `src/app/globals.css`.
 
@@ -46,7 +46,7 @@ Short windows (620px high or less) and reduced-motion preferences use ordinary s
 - `src/components/story-journey.tsx`: fixed reveal navigation, current chapter, sheet measurements.
 - `src/components/landing/botanical-story.tsx`: reusable ecosystem story drawing and copy.
 - `src/content/landing.es.ts`: Spanish ecosystem narrative (filename retained after relocation).
-- `src/content/map.es.ts`: Spanish Map and Elaborate copy.
+- `src/content/map.es.ts`: Spanish Map and Proceso copy.
 - `MAP.md`: Spanish concepts, visual references, and editorial documentation.
 - `public/illustrations/`: reusable SVG drawings; `public/portraits/`: illustrated portraits.
 - `src/config/site.ts`: brand name, phone, Instagram label and URL, and temporary email (`paula.rosat.roig@gmail.com`). Phone links are derived from the displayed number.
@@ -56,7 +56,7 @@ Short windows (620px high or less) and reduced-motion preferences use ordinary s
 
 ## Languages
 
-Spanish, English, French, and Catalan are configured with next-intl. `messages/{en,es,fr,ca}.json` contains translated controls, accessibility labels, metadata, and the 404 page. `src/i18n/` owns locale configuration and the language action. English remains the initial default; an existing locale cookie still applies. The landing language switcher is currently commented out. Map, Elaborate, Ecosystem, and journey labels are Spanish pending translation; Spanish sections/navigation declare `lang="es"`.
+Spanish, English, French, and Catalan are configured with next-intl. `messages/{en,es,fr,ca}.json` contains translated controls, accessibility labels, metadata, and the 404 page. `src/i18n/` owns locale configuration and the language action. English remains the initial default; an existing locale cookie still applies. The landing language switcher is currently commented out. Map, Proceso, Ecosystem, and journey labels are Spanish pending translation; Spanish sections/navigation declare `lang="es"`.
 
 ## Development notebook
 

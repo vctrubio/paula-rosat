@@ -1,12 +1,12 @@
-import type { elaborationContent } from "@/content/map.es";
+import type { procesoContent } from "@/content/map.es";
 import { BotanicalIllustration } from "./botanical-illustration";
 import { HighlightedTitle } from "./highlighted-title";
 
-type Step = (typeof elaborationContent.steps)[number];
+type Step = (typeof procesoContent.steps)[number];
 
-export function ElaborationStep({ step, index }: { step: Step; index: number }) {
+export function ProcesoStep({ step, index }: { step: Step; index: number }) {
   return (
-    <li id={`elaboracion-${step.id}`} className="elaboration-step">
+    <li id={`proceso-${step.id}`} className="proceso-step">
       <span className="step-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
       <BotanicalIllustration id={step.id} title={step.title} className="step-illustration" showTitle={false} />
       <div className="step-copy">

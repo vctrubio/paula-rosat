@@ -11,9 +11,9 @@ const palette = [
 ];
 
 const notes = [
-  { title: "What we know", items: ["Paula Rosat is an alchemist and a cook.", "She works with plant essences to flavour her world.", "She speaks Spanish, English, French, and Catalan; all four are supported on the site.", "Four chapters, in order: About, Map, Elaborate, Ecosystem. Each section is its own component.", "The portfolio will live at paularosat.com.", "GoDaddy manages the domain; Vercel will host the site."] },
+  { title: "What we know", items: ["Paula Rosat is an alchemist and a cook.", "She works with plant essences to flavour her world.", "She speaks Spanish, English, French, and Catalan; all four are supported on the site.", "Four chapters, in order: About, Map, Proceso, Ecosystem. Each section is its own component.", "The portfolio will live at paularosat.com.", "GoDaddy manages the domain; Vercel will host the site."] },
   { title: "First creative direction", items: ["A botanical field journal: personal, sensory, quietly curious.", "Plant studies, delicate lines, generous space, and paper tones.", "Let alchemy feel tangible through ingredients, process, and flavour.", "All homepage wording is a first draft, ready for Paula’s own voice."] },
-  { title: "Still to discover", items: ["Her story, location, and the default language she prefers (currently English).", "Notes and references for planning the Map and Elaborate sections.", "The work she wants to share: cooking, essences, experiments, collaborations.", "Photography, botanical material, and existing visual references.", "Contact details, social links, and what visitors should do next.", "Build and lint are paused until explicitly requested."] },
+  { title: "Still to discover", items: ["Her story, location, and the default language she prefers (currently English).", "Notes and references for planning the Map and Proceso sections.", "The work she wants to share: cooking, essences, experiments, collaborations.", "Photography, botanical material, and existing visual references.", "Contact details, social links, and what visitors should do next.", "Build and lint are paused until explicitly requested."] },
 ];
 
 function Palette() {
