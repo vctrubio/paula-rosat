@@ -11,7 +11,7 @@ export function SocialLinks({ showShare = false, instagramOnly = false }: { show
   const visibleLinks = instagramOnly ? links.filter(({ label }) => label === "Instagram") : links;
 
   return <div className="social-links">{showShare && <ShareButton />}{visibleLinks.map(({ label, href, path }) => (
-    <a key={label} href={href} aria-label={label} title={label}>
+    <a key={label} href={href} target={href.startsWith("https://") ? "_blank" : undefined} rel={href.startsWith("https://") ? "noopener noreferrer" : undefined} aria-label={label} title={label}>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={path} /></svg>
     </a>
   ))}</div>;
