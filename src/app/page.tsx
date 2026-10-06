@@ -5,7 +5,7 @@ import { AboutSection } from "@/components/sections/about-section";
 import { MapSection } from "@/components/sections/map-section";
 import { ElaborateSection } from "@/components/sections/elaborate-section";
 import { SiteFooter } from "@/components/site-footer";
-import { EcosystemSection } from "@/components/sections/ecosystem-section";
+// import { EcosystemSection } from "@/components/sections/ecosystem-section";
 
 export const metadata: Metadata = {
   alternates: { canonical: siteConfig.url },
@@ -33,7 +33,7 @@ export default function Home() {
         <StoryJourney>
           <MapSection />
           <ElaborateSection />
-          <EcosystemSection />
+          {/* <EcosystemSection /> */}
         </StoryJourney>
       </main>
       {/* <div className="portfolio-footer"><SiteFooter /></div> */}

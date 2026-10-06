@@ -8,7 +8,6 @@ const stops = [
   { id: "about", label: siteConfig.name },
   { id: "map", label: "Mapa" },
   { id: "elaborate", label: "Elaborar" },
-  { id: "ecosystems", label: "Ecosistema" },
 ];
 
 export function StoryJourney({ children }: { children: ReactNode }) {

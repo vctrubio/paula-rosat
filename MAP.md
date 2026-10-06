@@ -6,9 +6,11 @@ Documento de trabajo en español. Reúne el concepto, las referencias, los texto
 
 - [Notas manuscritas de Paula](docs/references/mapa-manuscrito.jpg).
 - [Imagen del documento generado a partir de las notas](docs/references/mapa-referencia.jpg). La referencia recibida es una imagen, no un archivo PDF editable.
+- [Mapa conceptual actualizado aportado por Paula](docs/references/mapa-conceptual-actual.png), fuente de los títulos, los textos breves y la disposición de las conexiones de esta iteración.
+- [Composición circular del centro](docs/references/map-center-type.png) y [referencia de anillos orgánicos](docs/references/map-center-ornament.png), aportadas para sustituir la imagen del alambique en el mapa.
 - Indicaciones de Paula transmitidas en la conversación: territorio con montaña, sol y río; planta con raíces y hojas; conocimiento como experiencia, tiempo y práctica; transformación mediante un alambique; experiencia como resultado; compartir como esencia de la vida y gesto de cuidado.
 
-Las imágenes de referencia se conservan en el repositorio como documentación. La web utiliza dibujos SVG originales, no las imágenes completas.
+Las imágenes de referencia se conservan en el repositorio como documentación. La web utiliza ilustraciones propias, no las imágenes completas.
 
 ## Idea central
 
@@ -23,10 +25,10 @@ Compartir no es un añadido al final: da sentido al trabajo. Una elaboración se
 Se mantienen las tres secciones en este orden: Sobre mí, Mapa, Elaborar.
 
 - **Sobre mí:** retrato SVG dentro del óvalo, nombre curvado encima y selector de cuatro idiomas debajo. Sin barra de navegación. El pie de contacto aparece al final de la web, después de Elaborar.
-- **Mapa:** red de seis ámbitos alrededor de Percibir relaciones. Dibujos y títulos en SVG; trazos curvos conectan el centro con los ámbitos y los ámbitos entre sí.
+- **Mapa:** red de seis ámbitos alrededor de Percibir relaciones. Cada ilustración muestra debajo su título en mayúsculas y su frase breve, sin trazo resaltador; dos recorridos orgánicos parten de Territorio y se unen en Compartir.
 - **Elaborar:** recorrido de arriba abajo. Cada paso reutiliza la misma ilustración del mapa. En pantallas amplias, dibujo y explicación comparten una fila; la secuencia de pasos siempre es vertical.
 
-El mapa funciona como entrada a Elaborar: cada nodo enlaza con el paso correspondiente. En pantallas estrechas se conserva la red y se permite desplazarla horizontalmente para mantener legibles los títulos. Elaborar se adapta a una columna.
+El mapa funciona como entrada a Elaborar: cada nodo enlaza con el paso correspondiente. Los dos recorridos inferiores llegan hasta las hebras ocres sostenidas por las manos de Compartir, sin puntas de flecha. En pantallas estrechas se conserva la red y se permite desplazarla horizontalmente para explorar las ilustraciones. Elaborar se adapta a una columna.
 
 No se han añadido mapas geográficos, ubicaciones, servicios comerciales ni datos biográficos.
 
@@ -34,73 +36,74 @@ No se han añadido mapas geográficos, ubicaciones, servicios comerciales ni dat
 
 ### Territorio
 
-**Texto breve:** Observar, escuchar, habitar.
+**Texto breve:** Observar, escuchar, habitar, cosechar.
 
 **Contenido:** suelo, clima, paisaje, aromas, ecosistemas, cultura, productores, temporalidad y relaciones humanas. Leer un lugar implica atender tanto a sus condiciones materiales como a quienes lo habitan.
 
-**Dibujo:** montaña en varios planos, sol, río que nace entre las montañas, árboles y corrientes de aire. El río avanza hacia el primer plano para dar profundidad. Luz, agua y aire forman el lenguaje visual solicitado.
+**Dibujo:** composición compacta del referente elegido: sol ocre pequeño sobre tres picos angulares, una ladera roja, nieve crema, planos arcilla y pinos oscuros en el borde inferior. Conserva su silueta libre y la textura de impresión; el cielo y el espacio alrededor son transparentes. La corriente del mapa parte de debajo del dibujo y se bifurca hacia los dos lados.
 
-**Archivo:** `public/illustrations/territorio.svg`.
+**Archivo:** `public/illustrations/territorio.png`. Ilustración con textura y fondo transparente, compartida por Mapa y Elaborar.
 
-### Materia / planta
+### Materia
 
-**Texto breve:** De la raíz a la hoja.
+**Texto breve:** Entrar en relación con su carácter, sus percepciones sensoriales y el ecosistema al que pertenece.
 
-**Contenido:** carácter, cualidades, ciclos, función en el ecosistema, relaciones y usos tradicionales. La planta se dibuja entera: las raíces prolongan el tallo y se corresponden visualmente con las ramificaciones de las hojas.
+**Contenido:** carácter, cualidades, ciclos, función en el ecosistema, relaciones y usos tradicionales. La ilustración condensa la planta, la luz y el agua en un símbolo.
 
-**Dibujo:** corte de suelo, raíces visibles, hojas con nervaduras, luz y agua. La continuidad gráfica entre raíz y hoja sugiere el intercambio que sostiene la vida.
+**Dibujo:** una planta en negativo dentro de un triángulo del ocre del sol de Territorio. Debajo, gotas o semillas en la tinta oscura de sus pinos descienden hasta una sola forma. La imagen reúne planta, luz, agua y materia en un símbolo sencillo.
 
-**Precisión conceptual:** la referencia al oxígeno se representa a través del aire y del intercambio con el entorno. Si el texto futuro explica la fotosíntesis, debe distinguir luz, agua y dióxido de carbono de la liberación de oxígeno; el dibujo es una síntesis poética, no un esquema químico.
+**Precisión conceptual:** el símbolo reúne luz, planta y agua de forma poética, no como esquema químico. Si el texto futuro explica la fotosíntesis, debe distinguir luz, agua y dióxido de carbono de la liberación de oxígeno.
 
-**Archivo:** `public/illustrations/materia.svg`.
+**Archivo:** `public/illustrations/materia.png`.
 
 ### Conocimiento
 
-**Texto breve:** Aprender haciendo, con tiempo.
+**Texto breve:** Integrar saberes para obrar.
 
 **Contenido:** observación, investigación, botánica, saberes tradicionales, cultivo y recolección, técnica, formulación y análisis sensorial. También ensayo, registro, memoria y repetición. El conocimiento se desarrolla en la práctica.
 
-**Dibujo:** cuaderno abierto con estudio botánico y anotaciones, lápiz usado, páginas superpuestas y reloj de arena. El cuaderno expresa el hacer; el reloj, el tiempo necesario para aprender.
+**Dibujo:** ojo abierto en un tono arcilla apagado tomado de las montañas de Territorio, con iris radiante y marcas irregulares alrededor. Expresa la observación atenta como comienzo del conocimiento; su textura evoca una impresión hecha a mano.
 
-**Archivo:** `public/illustrations/conocimiento.svg`.
+**Archivo:** `public/illustrations/conocimiento.png`.
 
 ### Transformación
 
-**Texto breve:** La técnica escucha a la materia.
+**Texto breve:** Elegir el gesto que permite expresar el carácter de la materia. La técnica al servicio del producto.
 
 **Contenido:** macerar, destilar, extraer, fermentar, concentrar, combinar y conservar. Elegir técnicas según lo que la materia puede expresar, respetando sus características.
 
-**Dibujo:** alambique de cobre, recipiente calentado, conducto, serpentín de condensación y frasco receptor. Distintos planos, reflejos y líneas de sombreado dan volumen a la máquina.
+**Dibujo:** una cerilla encendida de trazo suelto. La llama crece en capas de ocre, arcilla y rosa apagado alrededor de un centro claro, mientras la cabeza carbonizada y el tallo quedan en tinta oliva y madera cálida. El fuego funciona como símbolo del momento en que la materia cambia, sin representar una técnica concreta.
 
-**Archivo:** `public/illustrations/transformacion.svg`.
+**Archivo:** `public/illustrations/transformacion.png`.
 
 ### Experiencia
 
-**Texto breve:** Lo que permanece en el cuerpo.
+**Texto breve:** Sensaciones. Lo que permanece en el cuerpo y el tiempo.
 
 **Contenido:** sensación, aroma, temperatura, memoria, sabor, textura y persistencia. Qué recuerdo despierta; qué sucede en el cuerpo; qué queda después de probarlo.
 
-**Dibujo:** cuenco con helado, cuchara, rama aromática y trazos que evocan el aroma. El recipiente tiene espesor y sombreado; la experiencia se presenta como un resultado sensible.
+**Dibujo:** apunte de helado con cuatro pinceladas superpuestas en ocre, arcilla, oliva y rosa mora, tomadas de la paleta de la web. El cucurucho queda reducido a unas pocas líneas de tinta, sin trama realista. Los bordes sueltos de pigmento evocan el sabor, la textura y el recuerdo como una experiencia sensible.
 
-**Archivo:** `public/illustrations/experiencia.svg`.
+**Archivo:** `public/illustrations/experiencia.png`.
 
 ### Compartir
 
-**Texto breve:** Compartir es cuidar.
+**Texto breve:** El espacio donde sucede el intercambio. Reciprocidad.
 
 **Contenido:** comunidad, colaboración, intercambio de saberes, cosechas, trabajos colectivos y espacios compartidos. Escuchar a quien prueba la elaboración también forma parte del proceso.
 
-**Dibujo:** dos manos abiertas, juntas y ahuecadas, vistas desde arriba. Las palmas y las puntas de los dedos ofrecen moras, arándanos y pequeños frutos rojos, con algunas hojas. La referencia de gesto son las manos que sostienen tierra en la fotografía aportada; el dibujo es original y sustituye la tierra por frutos del bosque. El gesto principal es sostener, cuidar y ofrecer.
+**Dibujo:** cinco manos entran desde distintos lados y sostienen un hilo ocre continuo que se cruza en el centro. Las manos alternan tinta oliva, arcilla y rosa apagado de la paleta de la web. El gesto colectivo representa la colaboración, el intercambio y la red de vínculos; la composición es una interpretación original de la referencia aportada.
 
-**Archivo:** `public/illustrations/compartir.svg`.
+**Archivo:** `public/illustrations/compartir.png`.
 
 ## Relaciones de la red
 
-El centro mantiene vínculos de ida y vuelta con los seis ámbitos. Las líneas exteriores proponen un recorrido que puede repetirse:
+El centro «Percibir relaciones» recupera la frase «La red de vínculos entre lo material, lo vivo y lo cultural». Seis enlaces finos lo relacionan con los ámbitos sin pasar por los textos. El río de Territorio se bifurca en dos recorridos visuales:
 
-Territorio → Conocimiento → Transformación → Compartir → Experiencia → Materia / planta → Territorio.
+- Territorio → Materia → Experiencia → Compartir. La corriente se vuelve gotas y luego trazos de helado.
+- Territorio → Conocimiento → Transformación → Compartir. Las lágrimas del ojo se calientan y llegan a la llama de la cerilla.
 
-Es una lectura posible del mapa, no una secuencia rígida. El recorrido práctico de Elaborar sitúa primero la materia para desarrollar un ejemplo comprensible. Compartir devuelve nuevas preguntas y experiencias al inicio.
+Los dos recorridos terminan en hilos ocres que se unen a las manos de Compartir. Los tramos laterales se separan de las descripciones y rodean Materia y Conocimiento por fuera. Cada tramo tiene un dibujo propio, con la misma familia de trazos, colores y puntas. Es una lectura poética, no una secuencia rígida; el recorrido práctico de Elaborar mantiene su orden. Compartir devuelve nuevas preguntas al territorio aunque ese retorno no se dibuja todavía.
 
 ## Elaborar: helado de mora y enebro
 
@@ -111,7 +114,7 @@ Ejemplo tomado del documento de referencia. Se utiliza como narración conceptua
 | Paso | Título | Intención |
 | --- | --- | --- |
 | 01 | Territorio | Observar paisaje, suelo, agua, luz y estación. |
-| 02 | Materia / planta | Reconocer carácter, cualidades y ciclos de la mora y el enebro. |
+| 02 | Materia | Reconocer carácter, cualidades y ciclos de la mora y el enebro. |
 | 03 | Conocimiento | Observar, ensayar, registrar y volver a probar. |
 | 04 | Relaciones | Explorar el encuentro entre dulzor frutal y notas aromáticas de bosque. |
 | 05 | Transformación | Explorar la destilación del enebro y la integración del hidrolato en el helado. |
@@ -122,7 +125,7 @@ Ejemplo tomado del documento de referencia. Se utiliza como narración conceptua
 
 **Territorio — Todo empieza por escuchar un lugar.** Observar el paisaje, el suelo, el agua, la luz y la estación. En el ejemplo, la mora y el enebro se encuentran en un mismo entorno: ese vínculo es el punto de partida.
 
-**Materia / planta — Conocer antes de intervenir.** La mora aporta dulzor, jugosidad y fruta de temporada. El enebro sugiere notas aromáticas, resinosas y de bosque. Mirar la planta entera, de las raíces a las hojas, y reconocer sus ciclos.
+**Materia — Conocer antes de intervenir.** La mora aporta dulzor, jugosidad y fruta de temporada. El enebro sugiere notas aromáticas, resinosas y de bosque. Mirar la planta entera, de las raíces a las hojas, y reconocer sus ciclos.
 
 **Conocimiento — El tiempo también es un ingrediente.** Observar, ensayar, registrar y volver a probar. Poner en diálogo los saberes tradicionales, la botánica, la técnica y la experiencia sensorial para comprender la materia.
 
@@ -134,16 +137,15 @@ Ejemplo tomado del documento de referencia. Se utiliza como narración conceptua
 
 **Compartir — La elaboración encuentra su sentido en los demás.** Llevarlo a la mesa, escuchar a quien lo prueba y compartir lo aprendido. La experiencia de los demás devuelve preguntas al territorio: el recorrido vuelve a empezar.
 
-El paso Relaciones utiliza una ilustración adicional de mora y enebro: `public/illustrations/relaciones.svg`. No añade un séptimo ámbito exterior al mapa; desarrolla el concepto central dentro del ejemplo.
+El paso Relaciones utiliza `public/illustrations/relaciones.png`: un símbolo de arcos y ramificaciones en terracota, con una hoja verde en el centro que vincula la planta con sus raíces. Tiene fondo transparente y conserva la paleta del mapa. La fuente editable está en `docs/artwork/relaciones-mark.svg`. No añade un séptimo ámbito exterior al mapa; desarrolla el concepto central dentro del ejemplo.
 
 ## Lenguaje visual
 
-- Dibujos vectoriales originales, editables y reutilizables.
+- Dibujos originales y reutilizables. Los seis ámbitos del mapa y Relaciones utilizan PNG transparentes; el símbolo de Relaciones conserva además una fuente SVG editable.
 - Contornos irregulares y curvas suaves, con aspecto de estudio a mano.
 - Poca saturación: tinta verde oliva, papel cálido, lavados vegetales, cobre y rosa seco.
 - Profundidad mediante superposición, planos de paisaje, perspectiva, elipses, nervaduras y tramas finas.
-- Sin fotografías incrustadas ni ilustraciones rasterizadas.
-- Títulos dentro de los SVG como texto editable, no convertidos en curvas, para permitir la futura traducción.
+- Las seis ilustraciones del mapa son PNG transparentes. El título central y los títulos opcionales siguen como texto SVG editable para permitir la futura traducción.
 - Tipografía actual: Cormorant Garamond. No se ha añadido una fuente nueva.
 - Los textos accesibles describen los nodos; los dibujos repetidos del recorrido son decorativos y sus títulos también aparecen como encabezados para lectores de pantalla.
 
@@ -153,18 +155,19 @@ El paso Relaciones utiliza una ilustración adicional de mora y enebro: `public/
 | --- | --- |
 | `src/content/map.es.ts` | Textos españoles, ámbitos y pasos del ejemplo. |
 | `src/components/map/relationship-map.tsx` | Red SVG, conexiones, títulos y enlaces a los pasos. |
+| `src/components/map/map-connections.tsx` | Corrientes, gotas, llama e hilos que unen los seis ámbitos. |
 | `src/components/map/botanical-illustration.tsx` | Marco SVG reutilizable para ilustración y título. |
 | `src/components/map/elaboration-step.tsx` | Un paso de la secuencia vertical. |
 | `src/components/sections/map-section.tsx` | Composición de la sección Mapa. |
 | `src/components/sections/elaborate-section.tsx` | Composición de la sección Elaborar. |
-| `public/illustrations/` | Siete dibujos SVG compartidos. |
+| `public/illustrations/` | Un dibujo SVG y seis PNG compartidos. |
 | `src/app/globals.css` | Tipografía SVG, red y recorrido vertical adaptable. |
 
 ## Idiomas
 
 Por indicación del usuario, este contenido se prepara primero en español. Las dos secciones declaran `lang="es"` aunque se cambie el idioma del resto de la web. No se han inventado traducciones ni duplicado este contenido en los cuatro diccionarios.
 
-En la siguiente fase, mover los textos aprobados a los diccionarios de next-intl y sustituir la fuente española por claves de traducción. Conservar los identificadores de los nodos y las rutas de los SVG: las mismas ilustraciones sirven en español, inglés, francés y catalán. Revisar entonces la longitud de los títulos y su espacio dentro de los SVG.
+En la siguiente fase, mover los textos aprobados a los diccionarios de next-intl y sustituir la fuente española por claves de traducción. Conservar los identificadores de los nodos y las rutas de las ilustraciones: las mismas sirven en español, inglés, francés y catalán. Revisar entonces la longitud de los títulos y su espacio dentro de los SVG.
 
 ## Símbolo elegido: La esencia
 
@@ -204,9 +207,9 @@ Editar `src/config/site.ts` para cambiar el nombre, el teléfono o el enlace de 
 
 ## Actualización del centro y los títulos del mapa
 
-El centro muestra únicamente «Percibir relaciones» sobre el retrato de Paula, con opacidad reducida y un desvanecido radial. Se elimina el contorno punteado y el subtítulo del centro.
+El centro muestra «PERCIBIR RELACIONES» y «La red de vínculos entre lo material, lo vivo y lo cultural» dentro de una red circular de ramas finas dibujada en SVG, inspirada en la referencia aportada. Las ramas crecen hacia fuera y dejan espacio para el texto. El círculo no tiene relleno: el fondo del mapa queda visible detrás del texto. No hay imagen raster ni resaltador.
 
-Los títulos de los ámbitos aparecen encima de cada ilustración, con un trazo ámbar ondulado e inclinado de izquierda a derecha. Las frases descriptivas permanecen debajo de los dibujos. `src/components/map/highlighted-title.tsx` comparte este tratamiento entre el mapa y las ilustraciones de Elaborar.
+Los títulos de los seis ámbitos aparecen en mayúsculas y a menor tamaño debajo de cada imagen, seguidos de los textos del nuevo mapa de referencia en dos o tres líneas cuando hace falta, sin resaltador. `hideText` permanece disponible en el componente, desactivado por defecto. Las etiquetas accesibles leen el título y el texto visible; las descripciones ampliadas siguen en los datos. Los enlaces del mapa terminan en el borde del círculo. Elaborar mantiene los títulos y las explicaciones de los pasos.
 
 ## Último ajuste de la portada
 
@@ -214,11 +217,11 @@ El selector de idiomas de Sobre mí queda comentado temporalmente, tanto en el i
 
 El nombre curvado utiliza Cormorant Garamond en cursiva de peso 500, con mayor tamaño y espaciado más compacto, para una firma más expresiva. El estilo se encuentra en `.portrait-name`.
 
-## Imagen del centro: Paula junto al alambique
+## Marco circular del centro
 
-«Percibir relaciones» utiliza ahora `public/portraits/paula-alambic.svg`, una nueva ilustración de Paula junto a su alambique de cobre. Se mantiene la estética de lápiz, tinta sepia y acentos ámbar del retrato de portada. La composición cuadrada permite ver ambos sujetos en el centro desvanecido, con el título por encima. La portada conserva su retrato anterior.
+«Percibir relaciones» ya no utiliza PNG. El círculo y los dos anillos interiores son elementos SVG editables en `src/components/map/relationship-map.tsx`; el texto se coloca dentro. La ilustración anterior del alambique solo se conserva en `docs/artwork/alambique-center.png`.
 
-El original generado y el prompt se conservan en `docs/artwork/paula-alambic.png` y `docs/artwork/paula-alambic.md`. La versión SVG contiene trazados vectoriales. No se ha ejecutado la aplicación, build ni lint.
+La ilustración anterior de Paula junto al alambique permanece archivada en `docs/artwork/paula-alambic.png`, `docs/artwork/paula-alambic.md` y `public/portraits/paula-alambic.svg`. No se ha ejecutado la aplicación, build ni lint.
 
 ## Portada como umbral: lo visible y lo invisible
 

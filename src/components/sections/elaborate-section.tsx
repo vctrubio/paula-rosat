@@ -4,11 +4,10 @@ import { IllustratedHeading } from "@/components/map/illustrated-heading";
 
 export function ElaborateSection() {
   return (
-    <section id="elaborate" lang="es" aria-labelledby="elaborate-title" className="scroll-slide flex-col px-6 py-16 sm:px-12 sm:py-24">
+    <section id="elaborate" lang="es" aria-labelledby="elaborate-title" className="scroll-slide flex-col px-4 py-16 sm:px-10 sm:py-24">
       <header className="mx-auto max-w-2xl text-center">
         <IllustratedHeading id="elaborate-title">{elaborationContent.title}</IllustratedHeading>
-        <p className="mt-8 font-display text-4xl italic text-rose sm:text-5xl">{elaborationContent.subtitle}</p>
-        <p className="mt-4 text-sm leading-7 text-ink-muted">{elaborationContent.introduction}</p>
+        <p className="mx-auto mt-5 max-w-xl font-display text-xl leading-relaxed sm:text-2xl">{elaborationContent.introduction}</p>
       </header>
       <ol className="elaboration-journey mx-auto mt-12 w-full max-w-4xl sm:mt-20">
         {elaborationContent.steps.map((step, index) => <ElaborationStep key={step.id} step={step} index={index} />)}

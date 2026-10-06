@@ -1,12 +1,13 @@
 import type { IllustrationId } from "@/content/map.es";
 import { HighlightedTitle } from "./highlighted-title";
+import { illustrationSource } from "./illustration-source";
 
-// The same vector artwork and editable SVG title are used in both sections.
-export function BotanicalIllustration({ id, title, className = "" }: { id: IllustrationId; title: string; className?: string }) {
+// The same artwork and editable SVG title are used in both sections.
+export function BotanicalIllustration({ id, title, className = "", showTitle = true }: { id: IllustrationId; title: string; className?: string; showTitle?: boolean }) {
   return (
-    <svg viewBox="0 0 320 282" className={`botanical-illustration ${className}`} aria-hidden="true">
-      <HighlightedTitle title={title} x={160} y={26} width={Math.max(150, title.length * 13)} />
-      <image href={`/illustrations/${id}.svg`} y="42" width="320" height="240" />
+    <svg viewBox={showTitle ? "0 0 320 282" : "0 0 320 240"} className={`botanical-illustration ${className}`} aria-hidden="true">
+      {showTitle && <HighlightedTitle title={title} x={160} y={26} width={Math.max(150, title.length * 13)} />}
+      <image href={illustrationSource(id)} y={showTitle ? 42 : 0} width="320" height="240" />
     </svg>
   );
 }
