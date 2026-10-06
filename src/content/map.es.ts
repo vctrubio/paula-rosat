@@ -1,7 +1,7 @@
 // Fuente editorial en español. Traducción mediante i18n en una fase posterior.
 export const mapContent = {
   title: "Cómo trabajo",
-  introduction: "Leer el territorio para percibir las relaciones que lo conforman y encontrar formas de traducirlo para poder compartirlo.",
+  introduction: "Leer el territorio, percibir las relaciones que lo conforman y encontrar formas de traducirlo en elaboraciones gastronómicas que permitan compartirlo.",
   center: ["Percibir", "relaciones"],
   centerCaptionLines: ["La red de vínculos", "entre lo material,", "lo vivo y lo cultural."],
   mobileHint: "Desliza el mapa para explorar sus relaciones.",

@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { seoConfig } from "@/config/seo";
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
@@ -34,6 +35,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
       <body>
         <a href="#main" className="fixed top-4 left-4 z-50 -translate-y-24 bg-olive px-5 py-3 text-paper focus:translate-y-0">{t("skip")}</a>
         {children}
+        <Analytics />
       </body>
     </html>
   );
