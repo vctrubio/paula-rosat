@@ -1,0 +1,42 @@
+{
+  "Common": {
+    "home": "Paula Rosat home",
+    "navigation": "Sections",
+    "language": "Language",
+    "about": "About",
+    "map": "Map",
+    "elaborate": "Elaborate",
+    "backToAbout": "Back to About",
+    "takingShape": "A world taking shape",
+    "notebook": "Brand notebook",
+    "skip": "Skip to content"
+  },
+  "Metadata": {
+    "title": "Paula Rosat — Botanical alchemy & cooking",
+    "description": "The world of Paula Rosat. Botanical alchemy, plant essences, and cooking."
+  },
+  "About": {
+    "role": "Alchemist & cook",
+    "title": "The essence",
+    "titleAccent": "of things.",
+    "intro": "I’m Paula. Alchemist, cook, and curious about the quiet possibilities of plants.",
+    "description": "Extracting essences. Exploring flavour. Letting the natural world into the everyday.",
+    "specimen": "Botanical studies",
+    "caption": "Leaf · flower · essence",
+    "spokenLanguages": "I speak Spanish, English, French, and Catalan.",
+    "portraitPlaceholder": "Placeholder for a portrait of Paula Rosat"
+  },
+  "Map": {
+    "description": "A space for the places and connections in Paula’s world.",
+    "placeholder": "A map to unfold"
+  },
+  "Elaborate": {
+    "description": "A space to explore the work, the process, and what takes shape along the way.",
+    "placeholder": "Ideas taking root."
+  },
+  "NotFound": {
+    "label": "404 / A little off the path",
+    "title": "Nothing growing here. Yet.",
+    "return": "Return to Paula’s world"
+  }
+}

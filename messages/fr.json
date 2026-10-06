@@ -1,0 +1,42 @@
+{
+  "Common": {
+    "home": "Accueil de Paula Rosat",
+    "navigation": "Rubriques",
+    "language": "Langue",
+    "about": "À propos",
+    "map": "Carte",
+    "elaborate": "Élaborer",
+    "backToAbout": "Retour à À propos",
+    "takingShape": "Un monde prend forme",
+    "notebook": "Carnet de marque",
+    "skip": "Aller au contenu"
+  },
+  "Metadata": {
+    "title": "Paula Rosat — Alchimie botanique et cuisine",
+    "description": "L’univers de Paula Rosat. Alchimie botanique, essences de plantes et cuisine."
+  },
+  "About": {
+    "role": "Alchimiste et cuisinière",
+    "title": "L’essence",
+    "titleAccent": "des choses.",
+    "intro": "Je suis Paula. Alchimiste, cuisinière et curieuse des possibilités discrètes des plantes.",
+    "description": "Extraire les essences. Explorer les saveurs. Inviter la nature dans le quotidien.",
+    "specimen": "Études botaniques",
+    "caption": "Feuille · fleur · essence",
+    "spokenLanguages": "Je parle espagnol, anglais, français et catalan.",
+    "portraitPlaceholder": "Emplacement pour un portrait de Paula Rosat"
+  },
+  "Map": {
+    "description": "Un espace pour les lieux et les liens qui composent l’univers de Paula.",
+    "placeholder": "Une carte à déployer"
+  },
+  "Elaborate": {
+    "description": "Un espace pour explorer le travail, le processus et ce qui prend forme au fil du chemin.",
+    "placeholder": "Des idées prennent racine."
+  },
+  "NotFound": {
+    "label": "404 / Un petit détour",
+    "title": "Rien ne pousse ici. Pour l’instant.",
+    "return": "Retrouver l’univers de Paula"
+  }
+}
