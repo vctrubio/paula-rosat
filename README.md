@@ -76,20 +76,20 @@ The default local address is `http://localhost:3000` (the running environment ma
 
 ## Hosting
 
-Domain: `paularosat.com`, managed through GoDaddy. Intended hosting: Vercel. This task makes no deployment or DNS changes.
+Production URL: `https://paularosat.com`, managed through GoDaddy and hosted on Vercel. `src/config/seo.ts` is the single source for the public URL: native sharing, copied links, canonical metadata, Open Graph, Twitter images, and the development SEO preview all use it.
 
 ## Portrait scroll erasure and sharing card
 
 As Map enters the viewport, `StoryJourney` sets `--portrait-erase` on About. A second SVG mask reverses the same pencil passes used for the entrance, sketching the portrait and oval back out. Scrolling up redraws them. There is no portrait-to-droplet transition or blur. Reduced motion and short windows retain the still portrait. The shared brand SVG path remains in `src/config/brand.ts` for the navbar and sharing card.
 
-`src/app/opengraph-image.tsx` serves a 1200 × 630 PNG business card: warm paper, olive droplet, Paula Rosat, and **Destiladora de plantas medicinales**. Next.js supplies the OG image metadata through its file convention; homepage metadata adds canonical URL, Open Graph details, and a Twitter large-image card. The exact Spanish brand description and name are shared through `src/config/site.ts` and currently override the older translated Metadata strings. Do not translate this tagline automatically.
+`public/og-image.png` is the 1200 × 630 sharing card. `src/config/seo.ts` contains its copy and colors, the Spanish description, image metadata, canonical URL, and social metadata. `src/app/layout.tsx` uses the same URL as `metadataBase` so relative image paths resolve on `https://paularosat.com`. The favicon is `public/icon.png`.
 
+`src/components/share-button.tsx` shares the configured production URL through native sharing, copies it when native sharing is unavailable, or displays it for manual copying. Both navbar and footer use this same button.
 `/dev#seo` shows the real generated card, a sharing preview, and an illustrative search snippet. It remains development-only and noindex. Changes must be deployed before external sharing services can read them; previews here do not verify those services or invalidate their caches. No app, build, lint, or tests were run for this change.
 
 ### Portrait entrance
 
 The landing portrait reveals on page load through an animated SVG mask of overlapping pencil-like passes (3.2 seconds), accompanied by a drawn oval outline. This reveals the existing vector artwork rather than animating its thousands of individual paths. The mask animation is separate from the scroll erasure and does not replay while scrolling. Reduced-motion preferences show the complete portrait immediately. `/dev` font specimens remain unchanged.
 
-The sharing card places the droplet on the left and the name on the right, with a cursive Spanish subtitle underneath. Subtitle lettering is outlined Cormorant Garamond Italic in `src/assets/fonts/og-tagline.json` (generated from the already downloaded font); regenerate those outlines if the tagline changes. This keeps OG rendering independent of external font requests.
-
+The sharing card places the droplet on the left and Paula Rosat on the right, above “Creativa heladera”, “y”, and “Destiladora de plantas”. Its renderer is `scripts/seo-card.tsx`, using the bundled Cormorant Garamond font. After changing the card copy or design, regenerate the public PNGs with `npm run seo:images` when generation is requested.
 Sharing verification: checked the existing local server response for title, description, canonical, Open Graph and Twitter metadata; the OG endpoint returned a valid 1200 × 630 PNG. No production build or lint was run. External sharing requires deployment at the configured public domain.

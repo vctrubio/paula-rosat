@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 // Edit search results, link previews, and the card copy here.
 export const seoConfig = {
-  // Current public address; change when the custom domain is connected.
-  url: "https://paula-rosat.vercel.app",
+  // Production domain shared by metadata and all sharing actions.
+  url: "https://paularosat.com",
   name: "Paula Rosat",
   title: "Paula Rosat",
   description: "Creativa heladera y destiladora de plantas. Co-creando con la naturaleza a través de los sentidos.",
