@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 const stops = [
   { id: "about", label: siteConfig.name },
   { id: "mapa", label: "Mapa" },
-  { id: "processo", label: "Processo" },
+  { id: "proceso", label: "Proceso" },
 ];
 
 export function JourneyNavigation({ navRef, active, visible = true, footerVisible = false, onNavigate }: {
@@ -34,7 +34,7 @@ export function JourneyNavigation({ navRef, active, visible = true, footerVisibl
         ))}
       </ol>
       <div className="nav-actions" data-footer={footerVisible}>
-        <div className="nav-socials" inert={footerVisible} aria-hidden={footerVisible}><SocialLinks /></div>
+        <div className="nav-socials" inert={footerVisible} aria-hidden={footerVisible}><SocialLinks instagramOnly /></div>
         <div className="nav-top" inert={!footerVisible} aria-hidden={!footerVisible}><BackToTop /></div>
       </div>
     </nav>

@@ -15,7 +15,7 @@ export async function SiteHeader({ showSections = false }: { showSections?: bool
           <nav aria-label={t("navigation")} className="order-3 flex w-full justify-center gap-7 text-xs sm:order-none sm:w-auto">
             <Link href="/#about" className="py-2 hover:text-rose">{t("about")}</Link>
             <Link href="/#mapa" className="py-2 hover:text-rose">{t("map")}</Link>
-            <Link href="/#processo" className="py-2 hover:text-rose">{t("elaborate")}</Link>
+            <Link href="/#proceso" className="py-2 hover:text-rose">{t("elaborate")}</Link>
           </nav>
         ) : null}
         <LanguageSwitcher />

@@ -7,8 +7,10 @@ const links = [
   { label: "Teléfono", href: `tel:${siteConfig.phone.replaceAll(" ", "")}`, path: "M8 3H4c-1 0-1 2-1 3 0 8 7 15 15 15 1 0 3 0 3-1v-4l-5-2-2 3c-3-1-6-4-7-7l3-2Z" },
 ];
 
-export function SocialLinks() {
-  return <div className="social-links"><ShareButton />{links.map(({ label, href, path }) => (
+export function SocialLinks({ showShare = false, instagramOnly = false }: { showShare?: boolean; instagramOnly?: boolean }) {
+  const visibleLinks = instagramOnly ? links.filter(({ label }) => label === "Instagram") : links;
+
+  return <div className="social-links">{showShare && <ShareButton />}{visibleLinks.map(({ label, href, path }) => (
     <a key={label} href={href} aria-label={label} title={label}>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={path} /></svg>
     </a>
