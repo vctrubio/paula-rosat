@@ -9,7 +9,7 @@ const lines = sentences.map((text, index) => ({
 
 export function ShortBio() {
   return (
-    <p lang="es" className="max-w-xl px-4 text-center font-display text-2xl leading-snug text-ink-muted ">
+    <p lang="es" className="mx-auto max-w-xl px-4 text-center font-display text-xl leading-relaxed sm:text-2xl">
       <span className="sr-only">{seoConfig.description}</span>
       <span aria-hidden="true">
         {lines.map(({ text, offset }) => (
