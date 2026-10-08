@@ -11,9 +11,36 @@ const palette = [
 ];
 
 const notes = [
-  { title: "What we know", items: ["Paula Rosat is an alchemist and a cook.", "She works with plant essences to flavour her world.", "She speaks Spanish, English, French, and Catalan; all four are supported on the site.", "Four chapters, in order: About, Map, Proceso, Ecosystem. Each section is its own component.", "The portfolio will live at paularosat.com.", "GoDaddy manages the domain; Vercel will host the site."] },
-  { title: "First creative direction", items: ["A botanical field journal: personal, sensory, quietly curious.", "Plant studies, delicate lines, generous space, and paper tones.", "Let alchemy feel tangible through ingredients, process, and flavour.", "All homepage wording is a first draft, ready for Paula’s own voice."] },
-  { title: "Still to discover", items: ["Her story, location, and the default language she prefers (currently English).", "Notes and references for planning the Map and Proceso sections.", "The work she wants to share: cooking, essences, experiments, collaborations.", "Photography, botanical material, and existing visual references.", "Contact details, social links, and what visitors should do next.", "Build and lint are paused until explicitly requested."] },
+  {
+    title: "Current portfolio",
+    items: [
+      "Paula Rosat: creative ice cream maker and plant distiller, co-creating with nature through the senses.",
+      "About → relationship map → blackberry and juniper sorbet process → contact footer. Ecosystem stories are retained for future use.",
+      "Four languages in the selector: ES → CA → FR → EN. Spanish is the default; the chosen language is remembered across reloads.",
+      "Public copy is organized by language and section in text/. English and Spanish are reviewed and taken care of.",
+      "Production domain: paularosat.com. GoDaddy manages the domain; Vercel hosts the site.",
+    ],
+  },
+  {
+    title: "Established visual direction",
+    items: [
+      "A botanical field journal: illustrated ingredients, organic lines, generous space and warm paper tones.",
+      "Cormorant Garamond for the curved name and display text; DM Sans for utility text. The leaf-cutout droplet is the brand mark.",
+      "Story panels and footer share a centered 1280px cap, rounded corners and soft depth. The full-width navbar aligns its content to the same edges.",
+      "The small language circle uses curved labels and an ink-filled still. Its spout points towards the selected language, whose label becomes bold.",
+      "The portrait erases as the map enters; the language circle fades alongside it. Bio entrance animation runs on initial load, with immediate text updates when switching languages.",
+    ],
+  },
+  {
+    title: "Next review",
+    items: [
+      "French and Catalan are implemented; their editorial review is next.",
+      "Review longer translated diagram labels, intentional line breaks and mobile spacing in the browser.",
+      "The human handles visual browser review. Build, TypeScript, lint and translation-catalog checks passed during the i18n work.",
+      "The shared image card remains Spanish; its wording comes from text/es/metadata.json.",
+      "Keep translations in text/, artwork geometry in code and review status in text/README.md.",
+    ],
+  },
 ];
 
 function Palette() {

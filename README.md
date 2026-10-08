@@ -19,7 +19,7 @@ Story panels and the footer are centered and capped at 80rem (`max-w-7xl`). The 
 
 ## Languages and editable text
 
-The site supports **ES → EN → CA → FR**, with Spanish as the default. All public copy lives in `text/{es,en,ca,fr}/`, split by section. See [text/README.md](text/README.md) for the structure and editing rules.
+The site supports **ES → CA → FR → EN**, with Spanish as the default. All public copy lives in `text/{es,en,ca,fr}/`, split by section. See [text/README.md](text/README.md) for the structure and editing rules.
 
 `src/i18n/config.ts` defines the locales. `src/i18n/request.ts` loads the chosen catalog, and `src/i18n/actions.ts` saves a validated selection in the `paula-locale` cookie for a year. Switching rerenders the current page without changing its URL. The selected label is bold and the tiny still’s spout rotates towards it. The circle fades with the portrait while scrolling.
 
