@@ -1,0 +1,41 @@
+{
+  "plants": {
+    "number": "I",
+    "eyebrow": "The visible",
+    "title": "Learning from life.",
+    "description": "Sun, veined leaves, a bee, flowers, fruit and a droplet: a journey from light to the essence of plants.",
+    "annotations": [
+      {
+        "text": "observe"
+      },
+      {
+        "text": "recognise"
+      },
+      {
+        "text": "extract"
+      }
+    ],
+    "caption": "Look at a leaf, recognise an aroma, bring a discovery into the kitchen.",
+    "closing": "Curiosity begins here."
+  },
+  "underground": {
+    "number": "II",
+    "eyebrow": "The invisible",
+    "title": "Knowing means connecting.",
+    "description": "A shoot, mushrooms and a cross-section of soil reveal branching roots and a fine network of mycelium. An image of the connections and time that sustain growth.",
+    "annotations": [
+      {
+        "text": "listen"
+      },
+      {
+        "text": "connect"
+      },
+      {
+        "text": "share"
+      }
+    ],
+    "caption": "Beneath what we see lie time and relationships. Learning also means listening and sharing.",
+    "closing": "Nothing grows alone."
+  },
+  "title": "The visible and the invisible"
+}

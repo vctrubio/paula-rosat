@@ -1,0 +1,71 @@
+{
+  "title": "Com treballo",
+  "introduction": "Llegir el territori, percebre les relacions que el conformen i trobar maneres de traduir-lo en elaboracions gastronòmiques que permetin compartir-lo.",
+  "center": [
+    "Percebre",
+    "relacions"
+  ],
+  "centerCaptionLines": [
+    "La xarxa de vincles",
+    "entre allò material,",
+    "allò viu i allò cultural."
+  ],
+  "diagramDescription": "Percebre relacions ocupa el centre d’un cercle amb la frase la xarxa de vincles entre allò material, allò viu i allò cultural. Territori es bifurca cap a Matèria i Coneixement; una ruta continua cap a Experiència i l’altra cap a Transformació. Totes dues es reuneixen a Compartir. Línies més subtils connecten el cercle central amb cada àmbit. Cada dibuix enllaça amb el seu pas en l’elaboració.",
+  "nodes": [
+    {
+      "id": "territorio",
+      "title": "Territori",
+      "captionLines": [
+        "Observar, escoltar,",
+        "habitar, collir."
+      ],
+      "description": "Muntanya, sol, riu i aire. El sòl, el clima, les aromes, els ecosistemes, la cultura, els productors i les estacions donen context a la matèria."
+    },
+    {
+      "id": "materia",
+      "title": "Matèria",
+      "captionLines": [
+        "Entrar en relació amb el seu caràcter,",
+        "les seves percepcions sensorials",
+        "i l’ecosistema al qual pertany."
+      ],
+      "description": "Conèixer el seu caràcter, els seus cicles i la seva funció en l’ecosistema. Les arrels i les fulles connecten aigua, sòl, aire i llum: una imatge de la fotosíntesi i de la vida."
+    },
+    {
+      "id": "conocimiento",
+      "title": "Coneixement",
+      "captionLines": [
+        "Integrar sabers per actuar."
+      ],
+      "description": "Observar, provar, recordar i tornar a fer. Reunir experiència, recerca, botànica, sabers tradicionals, cultiu, recol·lecció, tècnica i anàlisi sensorial."
+    },
+    {
+      "id": "transformacion",
+      "title": "Transformació",
+      "captionLines": [
+        "Triar el gest que permet expressar",
+        "el caràcter de la matèria.",
+        "La tècnica al servei del producte."
+      ],
+      "description": "Macerar, destil·lar, extreure, fermentar, concentrar, combinar i conservar. Triar el gest que permet expressar el caràcter de la matèria."
+    },
+    {
+      "id": "experiencia",
+      "title": "Experiència",
+      "captionLines": [
+        "Sensacions. Allò que roman",
+        "en el cos i el temps."
+      ],
+      "description": "El resultat esdevé sensació: aroma, sabor, temperatura, textura i persistència. Desperta records i obre noves preguntes."
+    },
+    {
+      "id": "compartir",
+      "title": "Compartir",
+      "captionLines": [
+        "L’espai on té lloc l’intercanvi.",
+        "Reciprocitat."
+      ],
+      "description": "Cinc mans sostenen un mateix fil que les connecta. L’essència és en la trobada, la comunitat, la col·laboració i l’intercanvi de sabers. Compartir dona sentit a l’elaboració."
+    }
+  ]
+}

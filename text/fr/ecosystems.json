@@ -1,0 +1,41 @@
+{
+  "plants": {
+    "number": "I",
+    "eyebrow": "Le visible",
+    "title": "Apprendre du vivant.",
+    "description": "Soleil, feuilles nervurées, abeille, fleurs, fruits et goutte : un parcours de la lumière à l’essence des plantes.",
+    "annotations": [
+      {
+        "text": "observer"
+      },
+      {
+        "text": "reconnaître"
+      },
+      {
+        "text": "extraire"
+      }
+    ],
+    "caption": "Regarder une feuille, reconnaître un arôme, apporter une découverte en cuisine.",
+    "closing": "La curiosité commence ici."
+  },
+  "underground": {
+    "number": "II",
+    "eyebrow": "L’invisible",
+    "title": "Connaître, c’est relier.",
+    "description": "Une pousse, des champignons et une coupe de sol révèlent des racines ramifiées et un fin réseau de mycélium. Une image des liens et du temps qui soutiennent ce qui grandit.",
+    "annotations": [
+      {
+        "text": "écouter"
+      },
+      {
+        "text": "relier"
+      },
+      {
+        "text": "partager"
+      }
+    ],
+    "caption": "Sous ce que nous voyons se trouvent du temps et des relations. Apprendre, c’est aussi écouter et partager.",
+    "closing": "Rien ne grandit seul."
+  },
+  "title": "Le visible et l’invisible"
+}

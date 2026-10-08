@@ -614,6 +614,11 @@ body {
   animation: bio-letter-in 25ms step-end calc(var(--name-reveal-start, 1.7s) + var(--name-reveal-duration, 1.25s) - 0.5s + var(--letter-delay, 0s)) backwards;
 }
 
+.short-bio[data-entrance="false"] .bio-letter {
+  animation: none;
+  visibility: visible;
+}
+
 @keyframes bio-letter-in {
   from { visibility: hidden; }
   to { visibility: visible; }

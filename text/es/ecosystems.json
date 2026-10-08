@@ -1,0 +1,41 @@
+{
+  "plants": {
+    "number": "I",
+    "eyebrow": "Lo visible",
+    "title": "Aprender de lo vivo.",
+    "description": "Sol, hojas con nervaduras, una abeja, flores, frutos y una gota: un recorrido desde la luz hasta la esencia de las plantas.",
+    "annotations": [
+      {
+        "text": "observar"
+      },
+      {
+        "text": "reconocer"
+      },
+      {
+        "text": "extraer"
+      }
+    ],
+    "caption": "Mirar una hoja, reconocer un aroma, llevar un descubrimiento a la cocina.",
+    "closing": "La curiosidad empieza aquí."
+  },
+  "underground": {
+    "number": "II",
+    "eyebrow": "Lo invisible",
+    "title": "Conocer es conectar.",
+    "description": "Un brote, hongos y un corte de suelo revelan raíces ramificadas y una fina red de micelio. Una imagen de los vínculos y del tiempo que sostiene lo que crece.",
+    "annotations": [
+      {
+        "text": "escuchar"
+      },
+      {
+        "text": "vincular"
+      },
+      {
+        "text": "compartir"
+      }
+    ],
+    "caption": "Bajo lo que vemos hay tiempo y relaciones. Aprender también es escuchar y compartir.",
+    "closing": "Nada crece a solas."
+  },
+  "title": "Lo visible y lo invisible"
+}

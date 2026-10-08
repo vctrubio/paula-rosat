@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import spanish from "../../text/es/metadata.json";
 
 // Edit search results, link previews, and the card copy here.
 export const seoConfig = {
@@ -6,7 +7,7 @@ export const seoConfig = {
   url: "https://paularosat.com",
   name: "Paula Rosat",
   title: "Paula Rosat",
-  description: "Creativa heladera y destiladora de plantas. Co-creando con la naturaleza a través de los sentidos.",
+  description: spanish.description,
   locale: "es_ES",
   icons: {
     icon: { url: "/icon.png", type: "image/png", sizes: "48x48" },
@@ -15,11 +16,11 @@ export const seoConfig = {
     path: "/og-image.png",
     width: 1200,
     height: 630,
-    alt: "Paula Rosat. Creativa heladera y destiladora de plantas, junto a su gota.",
+    alt: spanish.imageAlt,
     name: "Paula Rosat",
-    firstLine: "Creativa heladera",
-    conjunction: "y",
-    secondLine: "Destiladora de plantas",
+    firstLine: spanish.cardFirstLine,
+    conjunction: spanish.cardConjunction,
+    secondLine: spanish.cardSecondLine,
     background: "#F7F4EB",
     ink: "#293327",
     botanical: "#626858",

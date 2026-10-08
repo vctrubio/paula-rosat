@@ -1,16 +1,19 @@
 import type { CSSProperties } from "react";
-import { seoConfig } from "@/config/seo";
+import { getLocale, getTranslations } from "next-intl/server";
+import { BioReveal } from "@/components/bio-reveal";
 
-const sentences = seoConfig.description.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((sentence) => sentence.trim()) ?? [seoConfig.description];
-const lines = sentences.map((text, index) => ({
-  text,
-  offset: sentences.slice(0, index).join("").length,
-}));
+export async function ShortBio() {
+  const [t, locale] = await Promise.all([getTranslations("About"), getLocale()]);
+  const description = t("bio");
+  const sentences = description.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((sentence) => sentence.trim()) ?? [description];
+  const lines = sentences.map((text, index) => ({
+    text,
+    offset: sentences.slice(0, index).join("").length,
+  }));
 
-export function ShortBio() {
   return (
-    <p lang="es" className="mx-auto max-w-xl px-4 text-center font-display text-xl leading-relaxed sm:text-2xl">
-      <span className="sr-only">{seoConfig.description}</span>
+    <BioReveal locale={locale}>
+      <span className="sr-only">{description}</span>
       <span aria-hidden="true">
         {lines.map(({ text, offset }) => (
           <span key={text} className="block not-first:mt-1">
@@ -20,6 +23,6 @@ export function ShortBio() {
           </span>
         ))}
       </span>
-    </p>
+    </BioReveal>
   );
 }

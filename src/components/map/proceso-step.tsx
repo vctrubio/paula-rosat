@@ -1,8 +1,8 @@
-import type { procesoContent } from "@/content/map.es";
+import type { ProcessStep } from "@/content/map-layout";
 import { BotanicalIllustration } from "./botanical-illustration";
 import { HighlightedTitle } from "./highlighted-title";
 
-type Step = (typeof procesoContent.steps)[number];
+type Step = ProcessStep;
 
 export function ProcesoStep({ step, index }: { step: Step; index: number }) {
   return (

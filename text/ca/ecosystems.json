@@ -1,0 +1,41 @@
+{
+  "plants": {
+    "number": "I",
+    "eyebrow": "Allò visible",
+    "title": "Aprendre d’allò viu.",
+    "description": "Sol, fulles amb nervadures, una abella, flors, fruits i una gota: un recorregut des de la llum fins a l’essència de les plantes.",
+    "annotations": [
+      {
+        "text": "observar"
+      },
+      {
+        "text": "reconèixer"
+      },
+      {
+        "text": "extreure"
+      }
+    ],
+    "caption": "Mirar una fulla, reconèixer una aroma, portar una descoberta a la cuina.",
+    "closing": "La curiositat comença aquí."
+  },
+  "underground": {
+    "number": "II",
+    "eyebrow": "Allò invisible",
+    "title": "Conèixer és connectar.",
+    "description": "Un brot, bolets i un tall de sòl revelen arrels ramificades i una fina xarxa de miceli. Una imatge dels vincles i del temps que sosté allò que creix.",
+    "annotations": [
+      {
+        "text": "escoltar"
+      },
+      {
+        "text": "vincular"
+      },
+      {
+        "text": "compartir"
+      }
+    ],
+    "caption": "Sota allò que veiem hi ha temps i relacions. Aprendre també és escoltar i compartir.",
+    "closing": "Res no creix tot sol."
+  },
+  "title": "Allò visible i allò invisible"
+}

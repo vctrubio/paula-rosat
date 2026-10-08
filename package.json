@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seo:images": "node scripts/generate-seo-images.cjs"
+    "seo:images": "node scripts/generate-seo-images.cjs",
+    "text:check": "node scripts/check-text.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

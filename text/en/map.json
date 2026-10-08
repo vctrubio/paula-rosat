@@ -1,0 +1,71 @@
+{
+  "title": "How I work",
+  "introduction": "Starting by reading the land, sensing the relationships that shape it and finding ways to translate them into culinary creations to share.",
+  "center": [
+    "Perceiving",
+    "relationships"
+  ],
+  "centerCaptionLines": [
+    "The web of connections",
+    "between the material,",
+    "the living and the cultural."
+  ],
+  "diagramDescription": "Perceiving relationships sits at the centre of a circle describing the connections between the material, the living and the cultural. Territory branches into Matter and Knowledge; one route continues towards Experience and the other towards Transformation. Both meet at Sharing. Finer lines connect the central circle to each domain. Each drawing links to its step in the process.",
+  "nodes": [
+    {
+      "id": "territorio",
+      "title": "Territory",
+      "captionLines": [
+        "Observe, listen,",
+        "inhabit, harvest."
+      ],
+      "description": "Mountains, sun, rivers and air. Soil, climate, aromas, ecosystems, culture, producers and seasons give context to the ingredients."
+    },
+    {
+      "id": "materia",
+      "title": "Matter",
+      "captionLines": [
+        "Connect with its character,",
+        "its sensory qualities",
+        "and the ecosystem they belong to."
+      ],
+      "description": "Understand its character, cycles and role in the ecosystem. Roots and leaves connect water, soil, air and light: an image of photosynthesis and life."
+    },
+    {
+      "id": "conocimiento",
+      "title": "Knowledge",
+      "captionLines": [
+        "Bring knowledge together to act."
+      ],
+      "description": "Observe, try, remember and try again. Bring together experience, research, botany, traditional knowledge, cultivation, gathering, technique and sensory analysis."
+    },
+    {
+      "id": "transformacion",
+      "title": "Transformation",
+      "captionLines": [
+        "Choose the gesture that expresses",
+        "the character of the ingredient.",
+        "The technique at the service of the product."
+      ],
+      "description": "Macerate, distil, extract, ferment, concentrate, combine and preserve. Choose the gesture that expresses the character of the ingredient."
+    },
+    {
+      "id": "experiencia",
+      "title": "Experience",
+      "captionLines": [
+        "Sensations. What stays",
+        "in the body and through time."
+      ],
+      "description": "The result becomes sensation: aroma, flavour, temperature, texture and persistence. It awakens memories and opens new questions."
+    },
+    {
+      "id": "compartir",
+      "title": "Sharing",
+      "captionLines": [
+        "The space where exchange happens.",
+        "Reciprocity."
+      ],
+      "description": "Five hands hold a single thread that connects them. The essence lies in encounter, community, collaboration and the exchange of knowledge. Sharing gives meaning to the creation."
+    }
+  ]
+}

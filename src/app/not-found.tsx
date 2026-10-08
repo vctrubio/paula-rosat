@@ -5,10 +5,10 @@ import { JourneyNavigation } from "@/components/journey-navigation";
 import styles from "./not-found.module.css";
 
 export default async function NotFound() {
-  const t = await getTranslations({ locale: "es", namespace: "NotFound" });
+  const t = await getTranslations("NotFound");
 
   return (
-    <main id="main" className={styles.page} lang="es">
+    <main id="main" className={styles.page}>
       <JourneyNavigation />
       <h1 className="sr-only">Paula Rosat</h1>
       <div className={styles.content}>

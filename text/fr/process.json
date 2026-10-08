@@ -1,0 +1,48 @@
+{
+  "title": "Sorbet à la mûre et au genièvre",
+  "introduction": "Créer une saveur née d’un territoire, de ses relations et de ses arômes.",
+  "steps": [
+    {
+      "id": "territorio",
+      "title": "Territoire",
+      "subtitle": "Tout commence par écouter le lieu.",
+      "body": "Observer le paysage, le sol, l’eau, la lumière et la saison. Ici, la mûre et le genièvre partagent un même environnement : la forêt méditerranéenne. Ce lien est le point de départ."
+    },
+    {
+      "id": "materia",
+      "title": "Matière",
+      "subtitle": "Connaître avant d’intervenir.",
+      "body": "La mûre apporte douceur, jutosité et notes sauvages. Le genièvre, un caractère aromatique, résineux et forestier. Explorer leur expression sensorielle : observer, toucher, sentir, goûter."
+    },
+    {
+      "id": "conocimiento",
+      "title": "Savoir",
+      "subtitle": "Le temps est aussi un ingrédient.",
+      "body": "Chercher, essayer, se tromper et recommencer. Faire dialoguer les savoirs ancestraux, la botanique, la technique et l’expérience sensorielle pour comprendre la matière."
+    },
+    {
+      "id": "relaciones",
+      "title": "Relations",
+      "subtitle": "Trouver le fil qui les relie.",
+      "body": "La douceur sombre et ronde de la mûre permet de mettre la composition en tension avec le caractère incisif du genièvre. Le territoire guide l’association ; les essais en affinent l’équilibre."
+    },
+    {
+      "id": "transformacion",
+      "title": "Transformation",
+      "subtitle": "Extraire pour exprimer.",
+      "body": "Distiller les baies de genièvre pour obtenir un hydrolat et l’incorporer au sorbet. Ajuster texture, douceur et équilibre aromatique au service de l’expression de la matière."
+    },
+    {
+      "id": "experiencia",
+      "title": "Expérience",
+      "subtitle": "Le paysage devient sensation.",
+      "body": "Créer une synergie capable de nous transporter là où vivent ces ingrédients, avec une finale fraîche et persistante. Ce qui compte, c’est ce qu’elle éveille : sensations de forêt, souvenirs, associations et curiosité."
+    },
+    {
+      "id": "compartir",
+      "title": "Partager",
+      "subtitle": "La création trouve son sens auprès des autres.",
+      "body": "Porter à table, partager pour savourer, habiter les sensations et laisser place à l’émerveillement. L’expérience des autres apporte de nouvelles perceptions et élargit le regard. Le parcours recommence."
+    }
+  ]
+}

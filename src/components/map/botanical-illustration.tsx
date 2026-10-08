@@ -1,4 +1,4 @@
-import type { IllustrationId } from "@/content/map.es";
+import type { IllustrationId } from "@/content/map-layout";
 import { HighlightedTitle } from "./highlighted-title";
 import { illustrationSource } from "./illustration-source";
 

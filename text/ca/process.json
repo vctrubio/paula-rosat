@@ -1,0 +1,48 @@
+{
+  "title": "Sorbet de mora i ginebró",
+  "introduction": "Elaborar un sabor que neix d’un territori, de les seves relacions i aromes.",
+  "steps": [
+    {
+      "id": "territorio",
+      "title": "Territori",
+      "subtitle": "Tot comença per escoltar el lloc.",
+      "body": "Observar el paisatge, el sòl, l’aigua, la llum i l’estació. En l’exemple, la mora i el ginebró habiten un mateix entorn: el bosc mediterrani. Aquest vincle és el punt de partida."
+    },
+    {
+      "id": "materia",
+      "title": "Matèria",
+      "subtitle": "Conèixer abans d’intervenir.",
+      "body": "La mora aporta dolçor, sucositat i notes silvestres. El ginebró, un caràcter aromàtic, resinós i de bosc. Explorar la seva expressió sensorial: observar, tocar, olorar, tastar."
+    },
+    {
+      "id": "conocimiento",
+      "title": "Coneixement",
+      "subtitle": "El temps també és un ingredient.",
+      "body": "Investigar, provar, equivocar-se i tornar a provar. Posar en diàleg els sabers ancestrals, la botànica, la tècnica i l’experiència sensorial per comprendre la matèria."
+    },
+    {
+      "id": "relaciones",
+      "title": "Relacions",
+      "subtitle": "Trobar el fil que les uneix.",
+      "body": "La dolçor fosca i rodona de la mora permet tensar la composició amb el caràcter punyent del ginebró. El territori orienta la combinació; les proves permeten afinar-ne l’equilibri."
+    },
+    {
+      "id": "transformacion",
+      "title": "Transformació",
+      "subtitle": "Extreure per expressar.",
+      "body": "Destil·lar les baies de ginebró per obtenir un hidrolat i integrar-lo en el sorbet. Ajustar textura, dolçor i equilibri aromàtic al servei de l’expressió de la matèria."
+    },
+    {
+      "id": "experiencia",
+      "title": "Experiència",
+      "subtitle": "El paisatge es converteix en sensació.",
+      "body": "Crear una sinergia capaç de transportar-nos al lloc on habiten aquests ingredients, amb un final fresc i persistent. El que importa és el que desperta: sensacions de bosc, records, associacions i curiositat."
+    },
+    {
+      "id": "compartir",
+      "title": "Compartir",
+      "subtitle": "L’elaboració troba el seu sentit en els altres.",
+      "body": "Portar-ho a taula, compartir per gaudir, habitar les sensacions i deixar espai a la sorpresa. L’experiència dels altres retorna noves percepcions i amplia la mirada. El recorregut torna a començar."
+    }
+  ]
+}

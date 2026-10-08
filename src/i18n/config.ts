@@ -1,4 +1,4 @@
-export const locales = ["es", "en", "fr", "ca"] as const;
+export const locales = ["es", "en", "ca", "fr"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "es";
 export const localeCookie = "paula-locale";

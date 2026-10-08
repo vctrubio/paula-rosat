@@ -1,0 +1,71 @@
+{
+  "title": "Cómo trabajo",
+  "introduction": "Leer el territorio, percibir las relaciones que lo conforman y encontrar formas de traducirlo en elaboraciones gastronómicas que permitan compartirlo.",
+  "center": [
+    "Percibir",
+    "relaciones"
+  ],
+  "centerCaptionLines": [
+    "La red de vínculos",
+    "entre lo material,",
+    "lo vivo y lo cultural."
+  ],
+  "diagramDescription": "Percibir relaciones ocupa el centro de un círculo con la frase la red de vínculos entre lo material, lo vivo y lo cultural. Territorio se bifurca hacia Materia y Conocimiento; una ruta continúa hacia Experiencia y la otra hacia Transformación. Ambas se reúnen en Compartir. Líneas más sutiles conectan el círculo central con cada ámbito. Cada dibujo enlaza con su paso en la elaboración.",
+  "nodes": [
+    {
+      "id": "territorio",
+      "title": "Territorio",
+      "captionLines": [
+        "Observar, escuchar,",
+        "habitar, cosechar."
+      ],
+      "description": "Montaña, sol, río y aire. El suelo, el clima, los aromas, los ecosistemas, la cultura, los productores y las estaciones dan contexto a la materia."
+    },
+    {
+      "id": "materia",
+      "title": "Materia",
+      "captionLines": [
+        "Entrar en relación con su carácter,",
+        "sus percepciones sensoriales",
+        "y el ecosistema al que pertenece."
+      ],
+      "description": "Conocer su carácter, sus ciclos y su función en el ecosistema. Las raíces y las hojas conectan agua, suelo, aire y luz: una imagen de la fotosíntesis y de la vida."
+    },
+    {
+      "id": "conocimiento",
+      "title": "Conocimiento",
+      "captionLines": [
+        "Integrar saberes para obrar."
+      ],
+      "description": "Observar, probar, recordar y volver a hacer. Reunir experiencia, investigación, botánica, saberes tradicionales, cultivo, recolección, técnica y análisis sensorial."
+    },
+    {
+      "id": "transformacion",
+      "title": "Transformación",
+      "captionLines": [
+        "Elegir el gesto que permite expresar",
+        "el carácter de la materia.",
+        "La técnica al servicio del producto."
+      ],
+      "description": "Macerar, destilar, extraer, fermentar, concentrar, combinar y conservar. Elegir el gesto que permite expresar el carácter de la materia."
+    },
+    {
+      "id": "experiencia",
+      "title": "Experiencia",
+      "captionLines": [
+        "Sensaciones. Lo que permanece",
+        "en el cuerpo y el tiempo."
+      ],
+      "description": "El resultado se vuelve sensación: aroma, sabor, temperatura, textura y persistencia. Despierta recuerdos y abre nuevas preguntas."
+    },
+    {
+      "id": "compartir",
+      "title": "Compartir",
+      "captionLines": [
+        "El espacio donde sucede el intercambio.",
+        "Reciprocidad."
+      ],
+      "description": "Cinco manos sostienen un mismo hilo que las conecta. La esencia está en el encuentro, la comunidad, la colaboración y el intercambio de saberes. Compartir da sentido a la elaboración."
+    }
+  ]
+}

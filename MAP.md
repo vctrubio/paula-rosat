@@ -153,7 +153,7 @@ El paso Relaciones utiliza `public/illustrations/relaciones.webp`, con versiones
 
 | Archivo | Responsabilidad |
 | --- | --- |
-| `src/content/map.es.ts` | Textos españoles, ámbitos y pasos del ejemplo. |
+| `text/{es,en,ca,fr}/map.json y process.json` | Textos españoles, ámbitos y pasos del ejemplo. |
 | `src/components/map/relationship-map.tsx` | Red SVG, conexiones, títulos y enlaces a los pasos. |
 | `src/components/map/map-connections.tsx` | Corrientes, gotas, llama e hilos que unen los seis ámbitos. |
 | `src/components/map/botanical-illustration.tsx` | Marco SVG reutilizable para ilustración y título. |
@@ -244,7 +244,7 @@ La red sirve como metáfora visual de relaciones y conocimiento. Es una ilustrac
 ### Composición y tipografía
 
 - Componente compartido: `src/components/landing/botanical-story.tsx`.
-- Textos españoles editables: `src/content/landing.es.ts`.
+- Textos españoles editables: `text/{es,en,ca,fr}/ecosystems.json`.
 - Retrato en el centro, con las dos láminas a los lados; proporciones adaptables sin posiciones absolutas superpuestas a la cara.
 - Nombre sobre una curva más ancha: radio horizontal de 245 unidades SVG, letras de 70 unidades, Cormorant Garamond cursiva de peso 700 y espaciado de 0.055 em.
 - Se conserva el retrato elegido y el texto provisional de ShortBio. El selector de idiomas sigue comentado.

@@ -1,0 +1,71 @@
+{
+  "title": "Comment je travaille",
+  "introduction": "Lire le territoire, percevoir les relations qui le façonnent et trouver comment les traduire en créations gastronomiques à partager.",
+  "center": [
+    "Percevoir",
+    "les relations"
+  ],
+  "centerCaptionLines": [
+    "Le réseau de liens",
+    "entre la matière,",
+    "le vivant et la culture."
+  ],
+  "diagramDescription": "Percevoir les relations occupe le centre d’un cercle décrivant le réseau de liens entre la matière, le vivant et la culture. Territoire se divise vers Matière et Savoir ; une voie se poursuit vers Expérience et l’autre vers Transformation. Les deux se rejoignent à Partager. Des lignes plus fines relient le cercle central à chaque domaine. Chaque dessin mène à son étape dans la création.",
+  "nodes": [
+    {
+      "id": "territorio",
+      "title": "Territoire",
+      "captionLines": [
+        "Observer, écouter,",
+        "habiter, récolter."
+      ],
+      "description": "Montagne, soleil, rivière et air. Le sol, le climat, les arômes, les écosystèmes, la culture, les producteurs et les saisons donnent son contexte à la matière."
+    },
+    {
+      "id": "materia",
+      "title": "Matière",
+      "captionLines": [
+        "Entrer en relation avec son caractère,",
+        "ses qualités sensorielles",
+        "et l’écosystème auquel elle appartient."
+      ],
+      "description": "Connaître son caractère, ses cycles et sa fonction dans l’écosystème. Les racines et les feuilles relient l’eau, le sol, l’air et la lumière : une image de la photosynthèse et de la vie."
+    },
+    {
+      "id": "conocimiento",
+      "title": "Savoir",
+      "captionLines": [
+        "Réunir les savoirs pour agir."
+      ],
+      "description": "Observer, essayer, se souvenir et recommencer. Réunir expérience, recherche, botanique, savoirs traditionnels, culture, cueillette, technique et analyse sensorielle."
+    },
+    {
+      "id": "transformacion",
+      "title": "Transformation",
+      "captionLines": [
+        "Choisir le geste qui exprime",
+        "le caractère de la matière.",
+        "La technique au service du produit."
+      ],
+      "description": "Macérer, distiller, extraire, fermenter, concentrer, associer et conserver. Choisir le geste qui exprime le caractère de la matière."
+    },
+    {
+      "id": "experiencia",
+      "title": "Expérience",
+      "captionLines": [
+        "Sensations. Ce qui demeure",
+        "dans le corps et le temps."
+      ],
+      "description": "Le résultat devient sensation : arôme, saveur, température, texture et persistance. Il éveille des souvenirs et ouvre de nouvelles questions."
+    },
+    {
+      "id": "compartir",
+      "title": "Partager",
+      "captionLines": [
+        "L’espace où se produit l’échange.",
+        "Réciprocité."
+      ],
+      "description": "Cinq mains tiennent un même fil qui les relie. L’essence réside dans la rencontre, la communauté, la collaboration et l’échange de savoirs. Partager donne son sens à la création."
+    }
+  ]
+}

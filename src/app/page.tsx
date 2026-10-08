@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { homeMetadata } from "@/config/seo";
+import { getLocale, getTranslations } from "next-intl/server";
+import { homeMetadata, seoConfig } from "@/config/seo";
 import { SiteFooter } from "@/components/site-footer";
 import { StoryJourney } from "@/components/story-journey";
 import { AboutSection } from "@/components/sections/about-section";
@@ -9,7 +10,24 @@ import { ArtworkReveal } from "@/components/artwork-reveal";
 import { artworkSources } from "@/content/artwork-assets";
 // import { EcosystemSection } from "@/components/sections/ecosystem-section";
 
-export const metadata: Metadata = homeMetadata;
+export async function generateMetadata(): Promise<Metadata> {
+  const [t, locale] = await Promise.all([getTranslations("Metadata"), getLocale()]);
+  return {
+    ...homeMetadata,
+    description: t("description"),
+    openGraph: {
+      ...homeMetadata.openGraph,
+      description: t("description"),
+      locale: { es: "es_ES", en: "en_GB", ca: "ca_ES", fr: "fr_FR" }[locale],
+      images: [{ url: seoConfig.image.path, width: seoConfig.image.width, height: seoConfig.image.height, alt: t("imageAlt") }],
+    },
+    twitter: {
+      ...homeMetadata.twitter,
+      description: t("description"),
+      images: [{ url: seoConfig.image.path, alt: t("imageAlt") }],
+    },
+  };
+}
 
 export default function Home() {
   return (

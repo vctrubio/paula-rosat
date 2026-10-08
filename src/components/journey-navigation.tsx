@@ -3,15 +3,11 @@
 import { BackToTop } from "@/components/back-to-top";
 import { SocialLinks } from "@/components/social-links";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import type { CSSProperties, MouseEvent, Ref } from "react";
 import { BrandMark } from "@/components/brand-mark";
 import { siteConfig } from "@/config/site";
 
-const stops = [
-  { id: "about", label: siteConfig.name },
-  { id: "mapa", label: "Mapa" },
-  { id: "proceso", label: "Proceso" },
-];
 
 export function JourneyNavigation({ navRef, active, visible = true, footerVisible = false, onNavigate }: {
   navRef?: Ref<HTMLElement>;
@@ -20,8 +16,14 @@ export function JourneyNavigation({ navRef, active, visible = true, footerVisibl
   footerVisible?: boolean;
   onNavigate?: (event: MouseEvent<HTMLAnchorElement>, id: string) => void;
 }) {
+  const t = useTranslations("Common");
+  const stops = [
+    { id: "about", label: siteConfig.name },
+    { id: "mapa", label: t("map") },
+    { id: "proceso", label: t("proceso") },
+  ];
   return (
-    <nav ref={navRef} className="journey-nav" data-visible={visible} inert={!visible} aria-hidden={!visible} aria-label="Recorrido" lang="es">
+    <nav ref={navRef} className="journey-nav" data-visible={visible} inert={!visible} aria-hidden={!visible} aria-label={t("journey")}>
       <ol>
         {stops.map((stop, index) => (
           <li key={stop.id} style={{ "--section-progress": `var(--progress-${stop.id}, 0)` } as CSSProperties}>
