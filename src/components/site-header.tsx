@@ -7,7 +7,7 @@ export async function SiteHeader({ showSections = false }: { showSections?: bool
 
   return (
     <header className="site-header sticky top-0 z-30 border-b border-line bg-paper/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-full max-w-[1600px] flex-wrap items-center justify-between gap-x-2 gap-y-1 px-6 py-3 sm:gap-x-4 sm:px-12 lg:px-20">
+      <div className="content-container flex h-full flex-wrap items-center justify-between gap-x-2 gap-y-1 py-3 sm:gap-x-4">
         <Link href="/" aria-label={t("home")} className="shrink-0 font-display text-2xl font-medium tracking-[-0.04em] sm:text-4xl">
           paula rosat<span className="text-rose">.</span>
         </Link>

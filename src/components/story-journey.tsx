@@ -23,6 +23,7 @@ export function StoryJourney({ children }: { children: ReactNode }) {
       frame = 0;
       const threshold = navigation!.offsetHeight + 100;
       const distance = window.innerHeight - container!.getBoundingClientRect().top;
+      const languages = about?.querySelector<HTMLElement>(".about-languages");
       // Keep the reversible sketch animation in view as the map covers the portrait.
       // Screen-percentage delays can make it redraw entirely behind the map.
       let nameGone = false;
@@ -33,6 +34,8 @@ export function StoryJourney({ children }: { children: ReactNode }) {
         const end = bounds.top + bounds.height * 0.25;
         const progress = Math.max(0, Math.min(1, (start - mapTop) / Math.max(1, start - end)));
         about?.style.setProperty("--portrait-erase", String(progress));
+        about?.style.setProperty("--language-opacity", String(1 - progress));
+        if (languages) languages.inert = progress === 1;
         // Start erasing the name as the portrait reaches the end of its erasure.
         const nameStart = end + bounds.height * 0.18;
         const nameProgress = Math.max(0, Math.min(1, (nameStart - mapTop) / Math.max(1, bounds.height * 0.25)));
@@ -88,6 +91,9 @@ export function StoryJourney({ children }: { children: ReactNode }) {
     return () => {
       about?.style.removeProperty("--portrait-erase");
       about?.style.removeProperty("--portrait-name-erase");
+      about?.style.removeProperty("--language-opacity");
+      const languages = about?.querySelector<HTMLElement>(".about-languages");
+      if (languages) languages.inert = false;
       observer.disconnect();
       cancelAnimationFrame(frame);
       window.removeEventListener("resize", measure);

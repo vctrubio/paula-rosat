@@ -19,6 +19,16 @@
 
 :root {
   --site-header-height: 8rem;
+  --content-max-width: 80rem;
+  --content-padding: clamp(1rem, 4vw, 4rem);
+  --content-edge: max(var(--content-padding), calc((100% - var(--content-max-width)) / 2 + var(--content-padding)));
+}
+
+.content-container {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+  padding-inline: var(--content-padding);
 }
 
 html:has(.portfolio) {
@@ -96,6 +106,55 @@ html:has(.portfolio) {
   width: 100%;
 }
 
+.about-languages {
+  position: absolute;
+  top: 14px;
+  right: var(--content-edge);
+  width: 76px;
+  height: 76px;
+  scale: 0.578947;
+  transform-origin: top right;
+  opacity: var(--language-opacity, 1);
+  color: var(--color-olive);
+}
+.about-language-position {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.about-language-position button {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 44px;
+  height: 28px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  pointer-events: auto;
+  border-radius: 50%;
+  transition: color 160ms ease;
+}
+.about-language-position button:hover { color: var(--color-rose); }
+.about-language-position button svg { width: 100%; height: 100%; overflow: visible; }
+.about-language-position text {
+  fill: currentColor;
+  font-family: var(--font-cormorant), serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+.about-language-position button:focus-visible {
+  outline: 2px solid var(--color-olive);
+  outline-offset: 2px;
+}
+.about-language-position span {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 16px;
+  line-height: 1;
+}
+
 /* No overflow/transform on these ancestors: every sheet shares the scroll viewport. */
 .story-pages {
   position: relative;
@@ -104,6 +163,9 @@ html:has(.portfolio) {
 }
 
 .story-pages > section {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-inline: auto;
   position: sticky;
   top: var(--sheet-top, 0px);
   border-top: 1px solid var(--color-line);
@@ -119,13 +181,14 @@ html:has(.portfolio) {
 .journey-nav {
   position: fixed;
   inset: 0 0 auto;
+  width: 100%;
   transform: translateY(-100%);
   visibility: hidden;
   pointer-events: none;
   transition: transform 260ms ease, visibility 260ms;
   z-index: 10;
   background: var(--color-paper);
-  border-bottom: 1px solid var(--color-line);
+  box-shadow: 0 8px 28px rgb(41 51 39 / 7%);
   overflow-x: auto;
 }
 
@@ -145,7 +208,7 @@ html:has(.portfolio) {
   width: max-content;
   min-width: 100%;
   min-height: 4.5rem;
-  padding: 0.5rem clamp(1rem, 4vw, 4rem);
+  padding: 0.5rem 0;
 }
 
 .journey-nav li { display: flex; align-items: center; }
@@ -566,7 +629,18 @@ body {
 }
 
 /* Contact links move from the navigation into the parchment closing page. */
-.journey-nav { display: flex; align-items: center; justify-content: space-between; }
+.journey-nav { display: flex; align-items: center; justify-content: space-between; padding-inline: var(--content-edge); }
+
+@media (min-width: 1280px) {
+  .journey-nav {
+    background: linear-gradient(to right,
+      rgb(247 244 235 / 65%),
+      var(--color-paper) calc((100% - var(--content-max-width)) / 2),
+      var(--color-paper) calc((100% + var(--content-max-width)) / 2),
+      rgb(247 244 235 / 65%));
+    backdrop-filter: blur(12px);
+  }
+}
 .journey-nav ol { min-width: 0; flex-shrink: 0; }
 .social-links { display: flex; align-items: center; justify-content: center; gap: 12px; }
 .social-links a, .social-links button { display: grid; place-items: center; width: 44px; height: 44px; color: var(--color-olive); border-radius: 50%; }
@@ -574,6 +648,11 @@ body {
 .social-links a:hover, .social-links button:hover { background: rgb(57 71 53 / 8%); }
 .social-links a:focus-visible, .social-links button:focus-visible { outline: 2px solid var(--color-olive); outline-offset: 3px; }
 .site-closing {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+  margin-top: -2rem;
+  box-shadow: 0 -18px 48px rgb(41 51 39 / 7%);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -638,7 +717,7 @@ body {
   position: relative;
   flex: 0 0 44px;
   height: 44px;
-  margin-right: clamp(1rem, 4vw, 4rem);
+  margin-right: 0;
 }
 .nav-top {
   position: absolute;
@@ -671,9 +750,8 @@ body {
   transition-delay: 500ms, 580ms, 880ms;
 }
 @media (max-width: 480px) {
-  .journey-nav:has(.nav-actions) ol { padding-inline: 12px; }
+  .journey-nav:has(.nav-actions) ol { padding-right: 12px; }
   .journey-nav:has(.nav-actions) li + li { margin-left: 16px; }
-  .nav-actions { margin-right: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-actions .nav-top, .nav-actions .nav-socials { transition: none; transform: none; }
