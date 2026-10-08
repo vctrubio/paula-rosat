@@ -135,6 +135,28 @@ html:has(.portfolio) {
   transition: color 160ms ease;
 }
 .about-language-position button:hover { color: var(--color-rose); }
+.language-still {
+  position: absolute;
+  inset: 0;
+  transform: translateY(-4px);
+  width: 100%;
+  height: 100%;
+  stroke: var(--color-ink);
+  opacity: 0.65;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.language-still-body { fill: rgb(41 51 39 / 18%); }
+.language-still-pointer {
+  transform-origin: 38px 36px;
+  transition: rotate 450ms cubic-bezier(.22, 1, .36, 1);
+}
+.about-language-position button[aria-pressed="true"] text { font-weight: 700; }
+@media (prefers-reduced-motion: reduce) {
+  .language-still-pointer { transition: none; }
+}
 .about-language-position button svg { width: 100%; height: 100%; overflow: visible; }
 .about-language-position text {
   fill: currentColor;
